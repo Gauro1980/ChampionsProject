@@ -7,23 +7,21 @@ html{
   box-sizing:border-box;
   min-height: 100%;
   font-size: 62.5%;
-
 }
 *, *:before, *:after{
     box-sizing: inherit;
 }
-
 .cabecera{
 
-    width: 720px;
+    max-width: 490px;
     font-family: 'Krub', sans-serif;
-    min-height: 100%;
-    font-size: 1.6rem;
+    max-height: 8rem;
     background-color: var(--colorCabecera);
     border-radius: 1rem;
-    margin: 1rem auto;
+    margin:-8px auto;
+    z-index: 1;
+    position: relative;
     
-
     display: flex;
     flex-direction:row;
     align-items: center;
@@ -31,26 +29,22 @@ html{
     border-color: rgb(235, 239, 240);
     border-style:groove;
     border-width: 4px;
-    margin-bottom: 0;
-    z-index: 1;
-   
-    
+    bottom: 0;
 }
-.logo{
-    max-width: 100%;
-    margin: 5px 13px;
-    z-index: 1;
+.logo img{
+    max-height: 6rem;
+    margin: 2px 2px;
 }
 
 .login{
-    
+    margin: 2px 2px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex: 0 0 calc(65%);
-    font-size: 2rem;
+    align-items:center;
+    flex: 0 0 calc(50%);
+    font-size: 1.5rem;
     color: var(--colorClaro);
-    z-index: 1;
+    
 }
 main{
     font-family: 'Krub', sans-serif;
@@ -58,32 +52,37 @@ main{
     flex-direction:column;
     align-items: center;
 }
-.balon{
-    
-    width: 720px;
-    height: 30rem;
-    background-image: url(../img/balon.jpeg);
+.balon{ 
+    max-width: 500px;
+    height: 75vh;
+    background-image: url(../img/balon.png);
+    background-size: contain;
     background-position:bottom;
     
     display: flex;
     flex-direction:column;
-    align-items: center;
-    z-index: -1;
+    align-items:center;
+    
+    border-radius: 1rem;
+    z-index: 0;
 }
 .balon::after{
-    width: 720px;
+    width: 500px;
     content: '';
     background-color: rgba(0, 0, 0, 0.7);
-    position:absolute;
+    position:fixed;
     top:0rem;
     left:initial;
     right: initial;
     bottom: 0rem;
-
+    border-radius: 1rem;
+    z-index: 0;
 }
 form{
     z-index: 1;
 }
+
+
 legend{
     padding: 3rem;
     color:var(--colorClaro);
@@ -92,31 +91,28 @@ legend{
 }
 .datos{
     margin-top: 30px;
-
     align-content:space-between;
 }
 .datos label{
     color: var(--colorCabecera);
     font-size: 3rem;
-    font-weight: 700; 
-    
+    font-weight: 700;    
 }
 .datos input{
     display: flex;
     flex-direction:column;
     align-items: center;
-    font-size: 2.5rem;
-    box-shadow: 0px 10px 20px 10px rgba(229, 236, 248, 0.466);
+    font-size: 3rem;
+    height: 5rem;
+    box-shadow: 0px 5px 3px 5px rgba(229, 236, 248, 0.466);
     border-color: rgba(1, 67, 141, 0.829);
     border-radius: 1rem;
+    max-width: 430px ;
 }
-
 .boton{
-
     display: flex;
     justify-content:center;
     margin-top: 2rem;
-    
 }
 .boton a{
     
@@ -140,6 +136,7 @@ legend{
 .recuperar a{
     color: var(--colorRosa);
     font-size: 1.5rem;
+    font-weight: 700;
 }
 .recordar{
     margin-top: 2rem;
@@ -149,7 +146,7 @@ legend{
 .recordar label{
     color: var(--colorRosa);
     font-size: 1.5rem;
-
+    font-weight: 700;
 }
 
 
