@@ -1,0 +1,136 @@
+:root{
+--colorCabecera: #4a79f0;
+--colorClaro: #ffffff;
+--colorRosa: #f4ab8b;
+
+
+}
+html{
+  box-sizing:border-box;
+  min-height: 100%;
+  font-size: 62.5%;
+
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+header{
+
+    width: 720px;
+    font-family: 'Krub', sans-serif;
+    min-height: 100%;
+    font-size: 1.6rem;
+    background-color: var(--colorCabecera);
+    border-radius: 3rem;
+    margin: 1rem auto;
+    
+    
+
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    
+}
+.logo{
+    max-width: 100%;
+    margin: 5px 13px;
+}
+
+.login{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 calc(68%);
+    font-size: 2rem;
+    color: var(--colorClaro);
+}
+main{
+    font-family: 'Krub', sans-serif;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.balon{
+    
+    width: 720px;
+    height: 30rem;
+    background-image: url(../img/balon.jpeg);
+    background-position:bottom;
+    
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.balon::after{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    position:absolute ;
+    top: 12.88rem;
+    left: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+}
+form{
+    z-index: 1;
+}
+legend{
+    color:var(--colorClaro);
+    font-size: 2.5rem;
+    font-weight: 700;   
+}
+.datos{
+    margin-top: 30px;
+
+    align-content:space-between;
+}
+.datos label{
+    color: var(--colorCabecera);
+    font-size: 3rem;
+    font-weight: 700; 
+    
+}
+.datos input{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    /*text-size-adjust: 3rem;*/
+    font-size: 2.5rem;
+    
+    
+
+}
+
+.boton{
+
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    
+}
+.boton a{
+    
+    background-color: var(--colorCabecera);
+    padding: 1rem 5rem;
+    display: inline-block;
+    margin-top: 1rem;
+ 
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 3rem;
+    color: var(--colorClaro);
+    text-decoration:none;
+}
+.recuperar{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.recuperar a{
+    color: var(--colorRosa);
+    font-size: 1.5rem;
+}
+
+

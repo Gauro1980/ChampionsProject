@@ -1,0 +1,44 @@
+:root{
+--colorCabecera: #4a79f0;
+--colorClaro: #ffffff;
+
+
+}
+html{
+  box-sizing:border-box;
+  min-height: 100%;
+  font-size: 62.5%;
+
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+header{
+
+    width: 720px;
+    font-family: 'Krub', sans-serif;
+    min-height: 100%;
+    font-size: 1.6rem;
+    background-color: var(--colorCabecera);
+    border-radius: 3rem;
+    margin: 1rem auto;
+    /*display: flex;*/
+    flex-direction:row;
+    align-items: center;
+    
+
+    
+}
+.logo{
+    padding: 10px;
+}
+
+.login{
+    text-align: center;
+    font-size: 3rem;
+    color: #ffffff;
+
+
+}
+
