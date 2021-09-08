@@ -2,8 +2,6 @@
 --colorCabecera: #4a79f0;
 --colorClaro: #ffffff;
 --colorRosa: #f4ab8b;
-
-
 }
 html{
   box-sizing:border-box;
@@ -15,26 +13,33 @@ html{
     box-sizing: inherit;
 }
 
-header{
+.cabecera{
 
     width: 720px;
     font-family: 'Krub', sans-serif;
     min-height: 100%;
     font-size: 1.6rem;
     background-color: var(--colorCabecera);
-    border-radius: 3rem;
+    border-radius: 1rem;
     margin: 1rem auto;
-    
     
 
     display: flex;
     flex-direction:row;
     align-items: center;
+    box-shadow: 0px 10px 20px 10px rgba(103, 130, 170, 0.699);
+    border-color: rgb(235, 239, 240);
+    border-style:groove;
+    border-width: 4px;
+    margin-bottom: 0;
+    z-index: 1;
+   
     
 }
 .logo{
     max-width: 100%;
     margin: 5px 13px;
+    z-index: 1;
 }
 
 .login{
@@ -42,9 +47,10 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 0 0 calc(68%);
+    flex: 0 0 calc(65%);
     font-size: 2rem;
     color: var(--colorClaro);
+    z-index: 1;
 }
 main{
     font-family: 'Krub', sans-serif;
@@ -62,20 +68,24 @@ main{
     display: flex;
     flex-direction:column;
     align-items: center;
+    z-index: -1;
 }
 .balon::after{
+    width: 720px;
     content: '';
     background-color: rgba(0, 0, 0, 0.7);
-    position:absolute ;
-    top: 12.88rem;
-    left: 0rem;
-    right: 0rem;
+    position:absolute;
+    top:0rem;
+    left:initial;
+    right: initial;
     bottom: 0rem;
+
 }
 form{
     z-index: 1;
 }
 legend{
+    padding: 3rem;
     color:var(--colorClaro);
     font-size: 2.5rem;
     font-weight: 700;   
@@ -95,17 +105,16 @@ legend{
     display: flex;
     flex-direction:column;
     align-items: center;
-    /*text-size-adjust: 3rem;*/
     font-size: 2.5rem;
-    
-    
-
+    box-shadow: 0px 10px 20px 10px rgba(229, 236, 248, 0.466);
+    border-color: rgba(1, 67, 141, 0.829);
+    border-radius: 1rem;
 }
 
 .boton{
 
     display: flex;
-    justify-content: flex-end;
+    justify-content:center;
     margin-top: 2rem;
     
 }
@@ -119,7 +128,7 @@ legend{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2rem;
-    border-radius: 3rem;
+    border-radius: 1rem;
     color: var(--colorClaro);
     text-decoration:none;
 }
@@ -131,6 +140,16 @@ legend{
 .recuperar a{
     color: var(--colorRosa);
     font-size: 1.5rem;
+}
+.recordar{
+    margin-top: 2rem;
+    display: flex;
+    justify-content:flex-start;
+}
+.recordar label{
+    color: var(--colorRosa);
+    font-size: 1.5rem;
+
 }
 
 
