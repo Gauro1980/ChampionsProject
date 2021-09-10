@@ -1,7 +1,7 @@
 :root{
 --colorCabecera: #4a79f0;
 --colorClaro: #ffffff;
---colorRosa: #f4ab8b;
+--colorRosa: #f4a08b;
 }
 html{
   box-sizing:border-box;
@@ -11,6 +11,7 @@ html{
 *, *:before, *:after{
     box-sizing: inherit;
 }
+
 .cabecera{
 
     max-width: 490px;
@@ -25,7 +26,7 @@ html{
     display: flex;
     flex-direction:row;
     align-items: center;
-    box-shadow: 0px 10px 20px 10px rgba(103, 130, 170, 0.699);
+    box-shadow: 0px 5px 10px 5px rgba(103, 130, 170, 0.699);
     border-color: rgb(235, 239, 240);
     border-style:groove;
     border-width: 4px;
@@ -46,6 +47,16 @@ html{
     color: var(--colorClaro);
     
 }
+.registro{
+    margin: 2px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    flex: 0 0 calc(70%);
+    font-size: 1.5rem;
+    color: var(--colorClaro);
+
+}
 main{
     font-family: 'Krub', sans-serif;
     display: flex;
@@ -53,61 +64,87 @@ main{
     align-items: center;
 }
 .balon{ 
-    max-width: 500px;
-    height: 75vh;
+    max-width: 480px;
+    /*height: 75vh;*/
     background-image: url(../img/balon.png);
-    background-size: contain;
+    background-size: 100%;
     background-position:bottom;
     
     display: flex;
     flex-direction:column;
     align-items:center;
-    
+  
     border-radius: 1rem;
     z-index: 0;
 }
 .balon::after{
+    /*min-width: 360px;*/
     width: 500px;
+    max-width: 500px;
     content: '';
     background-color: rgba(0, 0, 0, 0.7);
     position:fixed;
-    top:0rem;
+    top: 0rem;
     left:initial;
     right: initial;
     bottom: 0rem;
     border-radius: 1rem;
     z-index: 0;
+    display: flex;
 }
 form{
     z-index: 1;
-    size: 360px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
 
 legend{
-    padding: 3rem;
+    
+    margin-top: 3rem;
     color:var(--colorClaro);
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;   
+    
+}
+.campos{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
 .datos{
-    margin-top: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction:column;
     align-content:space-between;
 }
 .datos label{
-    color: var(--colorCabecera);
-    font-size: 3rem;
-    font-weight: 700;    
+    
+    color:var(--colorCabecera);
+    -webkit-text-fill-color: var(--colorCabecera);
+    -webkit-text-stroke: 1px black;
+    text-shadow: -0.5px -0.5px  black, 0.5px 0.5px  black, -0.5px 0.5px  black, 0.5px -0.5px  black;
+    font-size: 2rem;
+    font-weight: 700;
+        
 }
 .datos input{
     display: flex;
     flex-direction:column;
     align-items: center;
-    font-size: 3rem;
-    height: 5rem;
-    box-shadow: 0px 5px 3px 5px rgba(229, 236, 248, 0.466);
+    font-size: 2rem;
+    height: 3rem;
+    /*box-shadow: 0px 5px 3px 5px rgba(229, 236, 248, 0.466);*/
     border-color: rgba(1, 67, 141, 0.829);
     border-radius: 1rem;
-    max-width: 430px ;
+    max-width: 300px ;
+
+}
+::-webkit-input-placeholder{
+    font-size: 1.5rem;
+    }
+::-moz-placeholder{
+    font-size: 1.5rem;
 }
 .boton{
     display: flex;
@@ -135,6 +172,7 @@ legend{
 }
 .recuperar a{
     color: var(--colorRosa);
+    text-shadow: -0.5px -0.5px  black, 0.5px 0.5px  black, -0.5px 0.5px  black, 0.5px -0.5px  black;
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -145,6 +183,7 @@ legend{
 }
 .recordar label{
     color: var(--colorRosa);
+    text-shadow: -0.5px -0.5px  black, 0.5px 0.5px  black, -0.5px 0.5px  black, 0.5px -0.5px  black;
     font-size: 1.5rem;
     font-weight: 700;
 }
