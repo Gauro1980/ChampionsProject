@@ -12,11 +12,11 @@ html{
     box-sizing: inherit;
 }
 body{
-    /*position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -250px;   /* height/2 = 500px / 2 */
-    /*margin-left: -250px;  /* width/2 = 500px / 2 */
+    margin-left: -250px;  /* width/2 = 500px / 2 */
  
    
     
