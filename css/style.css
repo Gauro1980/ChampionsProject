@@ -226,4 +226,13 @@ legend{
     border-radius: 1rem;
     max-width: 300px ;  
 }
+.site-header{
+    font-size: 10rem;
+    font-family: 'Krub', sans-serif;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+   
+}
+
 
