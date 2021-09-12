@@ -11,17 +11,13 @@ html{
 *, *:before, *:after{
     box-sizing: inherit;
 }
-body{
+/*body{
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -250px;   /* height/2 = 500px / 2 */
-    margin-left: -250px;  /* width/2 = 500px / 2 */
- 
-   
-    
-    
-}
+    /*margin-left: -250px;  /* width/2 = 500px / 2 */    
+/*}*/
 
 .balon{ 
     
@@ -227,12 +223,53 @@ legend{
     max-width: 300px ;  
 }
 .site-header{
-    font-size: 10rem;
+    font-size: 2rem;
     font-family: 'Krub', sans-serif;
     display: flex;
     flex-direction:column;
     align-items: center;
    
+}
+.contenedor{
+    display: flex;
+    font-size: 2rem;
+    font-family: 'Krub', sans-serif;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.barra a img {
+    max-height: 20rem;
+}
+.sesiones-menu{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    padding: 2rem;
+    justify-content: space-between;
+
+}
+.sesiones-menu img{
+    max-height: 20rem;
+}
+.navegacion1{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.icono{
+    padding: 2rem;
+    flex-basis: calc(33.3% - 1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content:top 1rem;
+
+   
+   
+   
+    
 }
 
 
