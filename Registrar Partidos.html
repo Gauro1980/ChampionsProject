@@ -4,15 +4,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registro de Usuario</title>
+        <title>Registro de Partidos</title>
         <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
         <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet"
             integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
+   
     <body>
-        <div class="contenedor">
+        <main>
         <header class="cabecera">
 
             <div class="logo">
@@ -21,9 +22,7 @@
             <div class="registro">
                <h1>Registro de Partidos <URegistro-Partidos></h1>
             </div>
-        </header>
-        
-            <main>
+        </header>   
                 <div class="balon">
                     <form action="#">
                         <legend>
@@ -38,7 +37,7 @@
                             </div>
                             <div class="datos">
                                 <label>Equipo Local:</label> 
-                                <div class = "ComboBox">
+                                <div class = "datos">
                                 <form >
                                     <select name="ComboBox" id="Lista">
                                         <option>UIS</option>
@@ -54,15 +53,13 @@
                                         <option>ESAP</option>
                                         <option>UNIMINUTO</option>
                                         <option>UTS</option>  
-                                        <option>U. Pamplona</option>
-                                    
+                                        <option>U. Pamplona</option>                                   
                                     </select>
-                                </form>	
-                            </div>  
+                                </form>	 
                             </div>
                             <div class="datos">
                                 <label>Equipo Visitante:</label> 
-                                <div class = "ComboBox">
+                                <div class = "datos">
                                 <form >
                                     <select name="ComboBox" id="Lista">
                                         <option>UIS</option>
@@ -82,9 +79,8 @@
                                     </select>
                                 </form>	 
                             </div>                          
-                            </div>
+                            
                             <div class="datos">
-                                
                                 <label>Categoría:</label>
                                 <div class = "ComboBox">
                                     <form >
@@ -128,14 +124,12 @@
                             </div>
                             </div>
                             <div class="datos">
-                            
                                 <label>Goles Local:</label>
                                 <input type="texto" name="goles" size="30"
                                 placeholder="Ingrese" required>
                                 <span class="validar"></span>
                             </div>
-                            <div class="datos">
-                                
+                            <div class="datos">                                
                                 <label>Goles Visitante</label>
                                 <input type="texto" name="goles" size="30"
                                 placeholder="Ingrese" required>
@@ -147,7 +141,7 @@
                         </div>
                     </form>
                 </div>
-            </main>
-        </div>
+        </main>
+       
     </body>
 </html>
