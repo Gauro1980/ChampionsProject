@@ -12,14 +12,19 @@ html{
     box-sizing: inherit;
 }
 body{
-    position: absolute;
+    /*position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -250px;   /* height/2 = 500px / 2 */
-    margin-left: -250px;  /* width/2 = 500px / 2 */
+    /*margin-left: -250px;  /* width/2 = 500px / 2 */
+ 
+   
+    
+    
 }
 
 .balon{ 
+    
     max-width: 500px;
     min-width: 360px;
     background-image: url(../img/balon.png);
@@ -28,6 +33,14 @@ body{
     background-position:center;
     
     border-radius: 1rem;
+    margin: 0 auto;
+}
+.contenido{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .balon::after{
@@ -44,7 +57,6 @@ body{
 .cabecera{
 
     max-width: 500px;
-    /*width: 490px;*/
     min-width: 360px;
     font-family: 'Krub', sans-serif;
     max-height: 8rem;
@@ -131,7 +143,7 @@ legend{
     color:var(--colorCabecera);
     -webkit-text-fill-color: var(--colorCabecera);
     -webkit-text-stroke: 1px black;
-    text-shadow: -0.5px -0.5px  black, 0.5px 0.5px  black, -0.5px 0.5px  black, 0.5px -0.5px  black;
+    text-shadow: -1px -1px  black, 1px 1px  black, -1px 1px  black, 1px -1px  black;
     font-size: 2rem;
     font-weight: 700;
         
