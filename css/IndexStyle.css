@@ -1,0 +1,62 @@
+:root{
+    --colorCabecera: #4a79f0;
+    --colorOscuro: black ;
+    --colorClaro: #ffffff;
+    --colorRosa: #fd6f4c;
+    }
+html{
+      box-sizing:border-box;
+      max-height: 100%;
+      font-size: 62.5%;
+}
+    *, *:before, *:after{
+        box-sizing: inherit;
+}
+ body{
+
+}
+
+.site-header{
+    font-size: 2rem;
+    font-family: 'Krub', sans-serif;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+   
+}
+.contenedor{
+    display: flex;
+    font-size: 2rem;
+    font-family: 'Krub', sans-serif;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.barra a img {
+    max-height: 20rem;
+}
+.sesiones-menu{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    padding: 2rem;
+    justify-content: space-between;
+
+}
+.sesiones-menu img{
+    max-height: 20rem;
+}
+.navegacion1{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.icono{
+    padding: 2rem;
+    flex-basis: calc(33.3% - 1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content:top 1rem;
+}

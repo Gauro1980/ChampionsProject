@@ -9,7 +9,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
 			rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<link rel="stylesheet" type="text/css" href="css/Indexstyle.css">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Krub"
@@ -29,210 +30,109 @@
 					<a href="index.html">
 						<img src="img/logo color en positivo horizontal@2x.png" alt="">
 					</a>
-					<div>
 
-					</div>
 					<nav class="navegacion1">
 						<a href="login.html">Login</a>
 						<a href="registro.html">Registro</a>
 
+					</nav>
+					<div class="site-header">
 
-						<div class="site-header">
+						<form action="../../form-result.php" method="post" target="_blank">
+							<label for="Menú">Menú Principal</label>
+							<select name="formularios" id="formularios">
 
-							<form action="../../form-result.php" method="post" target="_blank">
-								<label for="Menú">Menú Principal</label>
-								<select name="formularios" id="formularios">
+								<datalist id=formularios>
+									
+									<option>
+										<a href="Registro Equipos.html">Registro Equipos</a>
+									</option>
+									<option>
+										<a href="Registrar Partidos.html">Registro Partidos</a>
+									</option>
+									<option> Ver Partidos
+										
+									</option>
+								</datalist>
+							</select>
+							
 
-									<datalist id=formularios>
-										<option>
-											<a href="Registro Equipos.html">Registro Equipos</a>
-											<option>
-												<a href="Registrar Partidos.html">Registro Partidos</a>
-												<option> Ver Partidos
-												</select>
-												<input type="submit" value="Buscar">
+						</form>
 
-											</form>
-										</nav>
-									</div>
-								</div>
-							</div>
-						</header>
-						<main class="contenedor">
-							<!--<section class="contenedor seccion">-->
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="contenedor">
+			<!--<section class="contenedor seccion">-->
 
-							<h2 class="fw-300 centrar-texto">Noticias del torneo</h2>
+			<h2 class="fw-300 centrar-texto">Noticias del torneo</h2>
 
-							<div class="sesiones-menu">
+			<div class="sesiones-menu">
 
-								<div class="icono">
-									<img src="fotos/Jugadoras.jpg" alt="sesion menu">
-									<h3>Torneo segundo semestre 2021</h3>
-									<p>El torneo del segundo semestre de 2021, será llevado a cabo de forma
-										presencial, con el cumplimiento de las normas locales de
-										distanciamiento social, apoyado por los departamentos de bienestar
-										estudiantil en cada una de las
-										universidades.
-									</p>
-									<a href="#" class="boton boton-amarillo">Ver más</a>
-								</div>
-								<div class="icono">
-									<img src="fotos/UNAB FútbolFemenino.jpg" alt="Condiciones torneo">
-									<h3>Condiciones y Reglamento del torneo</h3>
-									<p>Nuestro torneo deportivo Universitario Champion Project, está
-										reglamentado con el cumplimiento de normas deportivas vigentes con el
-										fin de proteger el juego limpio y la integridad de
-										nuestros deportistas universitarios.
-									</p>
-									<a href="#" class="boton boton-amarillo">Ver más</a>
-								</div>
-								<div class="icono">
-									<img src="fotos/UPBcanchasbloque19b.jpg" alt="Universidades
-										Participantes">
-									<h3>Universidades participantes</h3>
-									<p>Champions Project es un torneo de fútbol dirigido a la integración
-										de las universidades del oriente colombiano, para fomentar la
-										integración de los estudiantes destacados en esta
-										disciplina deportiva, patrocinado por la Universidad UNAB.
-									</p>
-									<a href="#" class="boton boton-amarillo">Ver más</a>
-								</div>
-							</div>
-							<!--</section>-->
-						</main>
+				<div class="icono">
+					<img src="fotos/Jugadoras.jpg" alt="sesion menu">
+					<h3>Torneo segundo semestre 2021</h3>
+					<p>El torneo del segundo semestre de 2021, será llevado a cabo de forma
+						presencial, con el cumplimiento de las normas locales de
+						distanciamiento social, apoyado por los departamentos de bienestar
+						estudiantil en cada una de las
+						universidades.
+					</p>
+					<a href="#" class="boton boton-amarillo">Ver más</a>
+				</div>
+				<div class="icono">
+					<img src="fotos/UNAB FútbolFemenino.jpg" alt="Condiciones torneo">
+					<h3>Condiciones y Reglamento del torneo</h3>
+					<p>Nuestro torneo deportivo Universitario Champion Project, está
+						reglamentado con el cumplimiento de normas deportivas vigentes con el
+						fin de proteger el juego limpio y la integridad de
+						nuestros deportistas universitarios.
+					</p>
+					<a href="#" class="boton boton-amarillo">Ver más</a>
+				</div>
+				<div class="icono">
+					<img src="fotos/UPBcanchasbloque19b.jpg" alt="Universidades
+						Participantes">
+					<h3>Universidades participantes</h3>
+					<p>Champions Project es un torneo de fútbol dirigido a la integración
+						de las universidades del oriente colombiano, para fomentar la
+						integración de los estudiantes destacados en esta
+						disciplina deportiva, patrocinado por la Universidad UNAB.
+					</p>
+					<a href="#" class="boton boton-amarillo">Ver más</a>
+				</div>
+			</div>
+			<!--</section>-->
+		</main>
 
+		<div class="contenedor seccion-inferior seccion">
+			<section class="Jugadores destacados de la fecha">
+				<h3>Jugadores destacados de la fecha</h3>
 
+				<img src="img/blog1.jpg" alt="Entrada de blog">
 
-						<div class="contenedor seccion-inferior seccion">
-							<section class="Jugadores destacados de la fecha">
-								<h3>Jugadores destacados de la fecha</h3>
+			</section>
 
-								<img src="img/blog1.jpg" alt="Entrada de blog">
+			<section class="Enlaces">
+				<h3>Liga Fútbol Colombiano Betplay</h3>
+				<img src="img/blog1.jpg" alt="Entrada de blog">
+			</section>
+		</div>
 
-							</section>
+		<footer class="site-footer seccion">
+			<div class="contenedor contenedor-footer">
+				<nav class="navegacion">
+					<a href="nosotros.html">Nosotros</a>
+					<a href="anuncios.html">Anuncios</a>
+					<a href="blog.html">Blog</a>
+					<a href="contacto.html">Contacto</a>
+				</nav>
+				<p class="copyright">Todos los derechos reservados 2021 &copy;</p>
+			</div>
+		</footer>
 
-							<section class="Enlaces">
-								<h3>Liga Fútbol Colombiano Betplay</h3>
-								<img src="img/blog1.jpg" alt="Entrada de blog">
-							</section>
-						</div>
-
-
-
-						<footer class="site-footer seccion">
-							<div class="contenedor contenedor-footer">
-								<nav class="navegacion">
-									<a href="nosotros.html">Nosotros</a>
-									<a href="anuncios.html">Anuncios</a>
-									<a href="blog.html">Blog</a>
-									<a href="contacto.html">Contacto</a>
-								</nav>
-								<p class="copyright">Todos los derechos reservados 2021 &copy;</p>
-							</div>
-						</footer>
-
-
-						<div id="pageMiddleColumn" class="pageColumn">
-							<div class="pageBox hasDatepicker" id="datepickerBox"><div
-									class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content
-									ui-helper-clearfix ui-corner-all"><div class="ui-datepicker-header
-										ui-widget-header ui-helper-clearfix ui-corner-all"><a
-											class="ui-datepicker-prev ui-corner-all"
-											onclick="DP_jQuery_1631583399598.datepicker._adjustDate('#datepickerBox',
-											-1, 'M');" title="<"><span class="ui-icon ui-icon-circle-triangle-w">&lt;</span></a><a
-											class="ui-datepicker-next ui-corner-all"
-											onclick="DP_jQuery_1631583399598.datepicker._adjustDate('#datepickerBox',
-											+1, 'M');" title=">"><span class="ui-icon ui-icon-circle-triangle-e">&gt;</span></a><div
-											class="ui-datepicker-title"><span class="ui-datepicker-month">September</span>&nbsp;<span
-												class="ui-datepicker-year">2021</span></div></div><table
-										class="ui-datepicker-calendar"><thead><tr><th><span title="Monday">Mo</span></th><th><span
-														title="Tuesday">Tu</span></th><th><span title="Wednesday">We</span></th><th><span
-														title="Thursday">Th</span></th><th><span title="Friday">Fr</span></th><th
-													class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th><th
-													class="ui-datepicker-week-end"><span title="Sunday">Su</span></th></tr></thead><tbody><tr><td
-													class="ui-datepicker-other-month ui-datepicker-unselectable
-													ui-state-disabled">&nbsp;</td><td class="ui-datepicker-other-month
-													ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">1</a></td><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">2</a></td><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">3</a></td><td
-													class="ui-datepicker-week-end"onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">4</a></td><td
-													class="ui-datepicker-week-end"onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">5</a></td></tr><tr><td
-													class="ui-datepicker-days-cell-over ui-datepicker-current-day"
-													onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default ui-state-active"
-														href="#">6</a></td><td class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">7</a></td><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">8</a></td><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">9</a></td><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">10</a></td><td
-													class="ui-datepicker-week-end"onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">11</a></td><td
-													class="ui-datepicker-week-end"onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">12</a></td></tr><tr><td
-													class="ui-datepicker-today"
-													onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default ui-state-highlight"
-														href="#">13</a></td><td class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">14</a></td><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">15</a></td><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">16</a></td><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">17</a></td><td
-													class="ui-datepicker-week-end"onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">18</a></td><td
-													class="ui-datepicker-week-end"onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">19</a></td></tr><tr><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">20</a></td><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">21</a></td><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">22</a></td><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">23</a></td><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">24</a></td><td
-													class="ui-datepicker-week-end"onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">25</a></td><td
-													class="ui-datepicker-week-end"onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">26</a></td></tr><tr><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">27</a></td><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">28</a></td><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">29</a></td><td
-													class=""onclick="DP_jQuery_1631583399598.datepicker._selectDay('#datepickerBox',8,2021,
-													this);return false;"><a class="ui-state-default" href="#">30</a></td><td
-													class="ui-datepicker-other-month ui-datepicker-unselectable
-													ui-state-disabled">&nbsp;</td><td class="ui-datepicker-week-end
-													ui-datepicker-other-month ui-datepicker-unselectable
-													ui-state-disabled">&nbsp;</td><td class="ui-datepicker-week-end
-													ui-datepicker-other-month ui-datepicker-unselectable
-													ui-state-disabled">&nbsp;</td></tr></tbody></table></div></div>
-							<div id="adMiddleColumn">
-								<!-- FCStats - middle column -->
-								<ins class="adsbygoogle" style="display:block"
-									data-ad-client="ca-pub-7539117565197680" data-ad-slot="5253147069"
-									data-ad-format="auto"></ins>
-								<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-							</div>
-
-						</div>
-
-
-					</body>
-				</html>
+			</div>
+		</div>
+	</body>
+</html>
