@@ -16,7 +16,9 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="balon" >
+
+        <div class="balon">
+
             <header class="cabecera">
 
                 <div class="logo">
@@ -27,35 +29,52 @@
                 </div>
             </header>
             <main>
+
                 <form action="#">
-                    <legend>
+                    <legend class="descripcion">
                         Ingrese Usuario y Contraseña:
                     </legend>
                     <div class="campos">
                         <div class="datos">
-                            <label>Usuario:</label>
-                            <input type="text" name="usuario" size="30"
+                            <label for="usuario">Usuario:</label>
+                            <br>
+                            <input type="text" name="usuario" id="usuario"
+                                size="30"
                                 placeholder="Ingrese su usuario" required>
                             <span class="validar"></span>
                         </div>
                         <div class="datos">
-                            <label>Contraseña:</label>
-                            <input type="password" name="clave" size="30"
+                            <label for="clave">Contraseña:</label>
+                            <br>
+                            <input type="password" name="clave" id="clave"
+                                size="30"
                                 placeholder="Ingrese su contraseña" required>
                             <span class="validar"></span>
                         </div>
-                        <div class="recordar">
-                            <label>Recordar Contraseña<input type="checkbox"name="recordar"></label>
 
-                        </div>
-                        <div class="boton">
-                            <a href="#">&nbsp;&nbsp;Ingresar&nbsp;&nbsp;</a>
-                        </div>
-                        <div class="recuperar">
-                            <a href="#">Recuperación de Contraseña</a>
+                        <div class="aceptar" id="caja-recordar">
+                            <label for="caja">
+                                Recordar Contraseña <input type="checkbox"
+                                    id="caja" name="caja">
+                            </label>
                         </div>
                     </div>
+                    <div class="boton">
+                        <button type="submit" class="boton-envio">Ingresar</button>
+                    </div>
                 </form>
+                <div class="recuperar">
+                    <a href="#">Recuperación de Contraseña</a>
+                </div>
+                <div class="ir-registro">
+                    <p>Si no estas registrado puedes hacerlo en el siguiente
+                        link:
+                    </p>
+                    <div class="recuperar">
+                        <a href="registro.html">Registro de
+                            usuario</a>
+                    </div>
+                </div>
             </main>
         </div>
     </body>
