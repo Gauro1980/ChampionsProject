@@ -36,23 +36,27 @@
                         <div class="campos margen">
                             <div class="datos">
                                 <label for="ListaFase">Fase Campeonato</label>
+                                <br>
                                 <div class="ComboBox">
-                                    <select name="ListaFase" id="ListaFase">
+                                    <select name="ListaFase" id="ListaFase"required>
                                         <option>Fase de Grupos</option>
                                         <option>Octavos</option>
                                         <option>Cuartos</option>
                                         <option>Semifinal</option>
                                         <option>Final</option>
+                                        
                                     </select>
                                 </div>
                             </div>
                             
                             <div class="datos">
                                 <label for="ListaGenero">Categoría:</label>
+                                <br>
                                 <div class="ComboBox">
                                     
                                         <select name="ListaGenero"
-                                            id="ListaGenero">
+                                            id="ListaGenero"required>
+                                            <option>Seleccione una opcion</option>
                                             <option>Femenina</option>
                                             <option>Masculina</option>
                                             <option>Empleados</option>
@@ -63,9 +67,11 @@
                             <div class="datos">
 
                                 <label for="equipolocal">Equipo Local:</label>
+                                <br>
                                 <div class="ComboBox">
                                     
-                                        <select name="equipolocal" id="equipolocal">
+                                        <select name="equipolocal" id="equipolocal"required>
+                                            <option>Seleccione un equipo</option>
                                             <option>UIS</option>
                                             <option>UCC</option>
                                             <option>UFPS</option>
@@ -86,14 +92,11 @@
                             </div>
                             <div class="datos">
                                 <label for="goleslocal">Goles Local</label>
+                                <br>
                                 <input type="number" name="goleslocal" id="goleslocal" min="0"
                                     placeholder="-" >
                                 <span class="validar"></span>
                             </div>
-
-
-
-
 
                         </div>
                         
@@ -102,7 +105,7 @@
                                 <label for="ListaGrupos">Fase Grupos</label>
                                 <div class="ComboBox">
                                  
-                                        <select name="ListaGrupos" id="ListaGrupos">
+                                        <select name="ListaGrupos" id="ListaGrupos"required>
                                             <option>Seleccione Grupo</option>
                                             <option>GRUPO A</option>
                                             <option>GRUPO B</option>
@@ -123,7 +126,8 @@
                                 <label for="equipovisitante">Equipo Visitante:</label>
                                 <div class="ComboBox">
                                     
-                                        <select name="equipovisitante" id="equipovisitante">
+                                        <select name="equipovisitante" id="equipovisitante"required>
+                                            <option>Seleccione un equipo</option>
                                             <option>UIS</option>
                                             <option>UCC</option>
                                             <option>UFPS</option>
@@ -149,8 +153,6 @@
                                 <span class="validar"></span>
                             </div>
 
-                        
-                        
                         </div>
 
                     </div>

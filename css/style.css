@@ -137,33 +137,52 @@ legend{
 
 }
 .datos label{
-    
+    font-family: 'Krub', sans-serif;
     color:var(--colorOscuro);
-    -webkit-text-fill-color: var(--colorOscuro);
     font-size: 2rem;
     font-weight: 700;      
 }
 .datos input{
-    font-size: 2rem;
+    font-size: 1.5rem;
     height: 3rem;
     border-color: rgba(0, 0, 0, 0.829);
-    border-style: solid;
+    border-style:solid;
     border-radius: 1rem;
     max-width: 300px ;
+    font-family: 'Krub', sans-serif;
 
 }
 /*Tamaño del placeholder*/
 ::-webkit-input-placeholder{
     font-size: 1.5rem;
     }
-::-moz-placeholder{
-    font-size: 1.5rem;
+#goleslocal::-webkit-input-placeholder{
+text-align: center;
 }
+#golesvisitante::-webkit-input-placeholder{
+    text-align: center;
+    }
+
+
+::-moz-placeholder{
+    font-size: 1.5rem; 
+}
+#goleslocal::-moz-placeholder{
+    text-align: center;
+    }
+#golesvisitante::-moz-placeholder{
+    text-align: center;
+}
+    
+
+
 /*Diseño Bootones*/
 .boton{
-    display:inline-block;
+    display:flex;
+    
     margin: 2rem;
-    align-items: center;
+    align-items:center;
+    
     z-index: 1;
     
 }
@@ -226,18 +245,27 @@ legend{
     
 }
 
-.ComboBox form select{
+.ComboBox select{
     text-transform: uppercase;
     font-family: 'Krub', sans-serif;  
+    font-size: 1.5rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border-style:solid;
+    border-width: 2px;
+    border-color: var(--colorOscuro);
 }
+
  #goleslocal{
-     width: 5rem    ;
-     align-items: center;
+     width: 5rem;
+     text-align: center;
  }
 
  #golesvisitante{
-    width: 5rem ;
+    width: 5rem;
+    text-align: center;
  }
+
 /***
 
 
