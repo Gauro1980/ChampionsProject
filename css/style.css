@@ -181,16 +181,17 @@ text-align: center;
     display:flex;
     
     margin: 2rem;
-    align-items:center;
-    
+
+    flex-direction:row;
+
     z-index: 1;
     
 }
 .boton .boton-envio{
     
     background-color: var(--colorCabecera);
-    margin-left:2rem;
-    margin-right: 2rem;
+    margin-left:5rem;
+    margin-right: 5rem;
     padding: 1rem 3rem;
     
     text-transform: uppercase;
@@ -238,11 +239,6 @@ text-align: center;
 .ir-registro a{
     color: var(--colorRosa);
     font-size: 1.5rem;
-}
-.lineavs{
-    display:flex;
-    flex-direction: row;
-    
 }
 
 .ComboBox select{
