@@ -32,76 +32,39 @@
                     <legend>
                         Diligencie los siguientes campos:
                     </legend>
-
-                    <div class="campos">
-
-                        <section class="lineavs">
+                    <div class="camposdobles ">
+                        <div class="campos margen">
                             <div class="datos">
                                 <label for="ListaFase">Fase Campeonato</label>
                                 <div class="ComboBox">
-                                    <form>
-                                        <select name="ListaFase" id="ListaFase">
-                                            <option>Fase de Grupos</option>
-                                            <option>Octavos</option>
-                                            <option>Cuartos</option>
-                                            <option>Semifinal</option>
-                                            <option>Final</option>
-
-
-                                        </select>
-                                    </form>
+                                    <select name="ListaFase" id="ListaFase">
+                                        <option>Fase de Grupos</option>
+                                        <option>Octavos</option>
+                                        <option>Cuartos</option>
+                                        <option>Semifinal</option>
+                                        <option>Final</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="datos">
-                                <label for="ListaGrupos">Fase Grupos</label>
-                                <div class="ComboBox">
-                                    <form>
-                                        <select name="ListaGrupos" id="ListaGrupos">
-                                            <option>Seleccione Grupo</option>
-                                            <option>GRUPO A</option>
-                                            <option>GRUPO B</option>
-                                            <option>GRUPO C</option>
-                                            <option>GRUPO D</option>
-                                        </select>
-                                    </form>
-                                </div>
-                            </div>
-
-                        </section>
-
-                        <section class="lineavs">
+                            
                             <div class="datos">
                                 <label for="ListaGenero">Categoría:</label>
                                 <div class="ComboBox">
-                                    <form>
+                                    
                                         <select name="ListaGenero"
                                             id="ListaGenero">
                                             <option>Femenina</option>
                                             <option>Masculina</option>
                                             <option>Empleados</option>
                                         </select>
-                                    </form>
+                                    
                                 </div>
                             </div>
-
-
-                            <div class="datos">
-                                <label for="fecha">Fecha:</label>
-                                <input type="date" name="fecha" size="20"
-                                 required>
-                                <span class="validar"></span>
-
-                            </div>
-                        </section>
-
-
-
-                        <section class="lineavs">
                             <div class="datos">
 
                                 <label for="equipolocal">Equipo Local:</label>
                                 <div class="ComboBox">
-                                    <form>
+                                    
                                         <select name="equipolocal" id="equipolocal">
                                             <option>UIS</option>
                                             <option>UCC</option>
@@ -118,13 +81,48 @@
                                             <option>UTS</option>
                                             <option>U. Pamplona</option>
                                         </select>
-                                    </form>
+                                    
                                 </div>
+                            </div>
+                            <div class="datos">
+                                <label for="goleslocal">Goles Local</label>
+                                <input type="number" name="goleslocal" id="goleslocal" min="0"
+                                    placeholder="-" >
+                                <span class="validar"></span>
+                            </div>
+
+
+
+
+
+                        </div>
+                        
+                        <div class="campos margen">
+                            <div class="datos">
+                                <label for="ListaGrupos">Fase Grupos</label>
+                                <div class="ComboBox">
+                                 
+                                        <select name="ListaGrupos" id="ListaGrupos">
+                                            <option>Seleccione Grupo</option>
+                                            <option>GRUPO A</option>
+                                            <option>GRUPO B</option>
+                                            <option>GRUPO C</option>
+                                            <option>GRUPO D</option>
+                                        </select>
+                                    
+                                </div>
+                            </div>
+                            <div class="datos">
+                                <label for="fecha">Fecha:</label>
+                                <input type="date" name="fecha" size="20"
+                                 required>
+                                <span class="validar"></span>
+
                             </div>
                             <div class="datos">
                                 <label for="equipovisitante">Equipo Visitante:</label>
                                 <div class="ComboBox">
-                                    <form>
+                                    
                                         <select name="equipovisitante" id="equipovisitante">
                                             <option>UIS</option>
                                             <option>UCC</option>
@@ -141,18 +139,8 @@
                                             <option>UTS</option>
                                             <option>U. Pamplona</option>
                                         </select>
-                                    </form>
+                                   
                                 </div>
-                            </div>
-                        </section>
-
-                        <section class="lineavs">
-
-                            <div class="datos">
-                                <label for="goleslocal">Goles Local</label>
-                                <input type="number" name="goleslocal" id="goleslocal" min="0"
-                                    placeholder="-" >
-                                <span class="validar"></span>
                             </div>
                             <div class="datos">
                                 <label for="golesvisitante">Goles Visitante</label>
@@ -160,14 +148,17 @@
                                     placeholder="-" >
                                 <span class="validar"></span>
                             </div>
-                        </section>
+
+                        
+                        
+                        </div>
+
                     </div>
                     <div class="boton">
-                        <button type="button" class="boton-envio" onclick="location.href='./login.html'">Regresar</button>
-                        <button type="submit" class="boton-envio">Crear Partido</button>
+                        <button type="button" class="boton-envio" onclick="location.href='./login.html'">Cancelar</button>
+                        <button type="submit" class="boton-envio">&nbsp;&nbsp;&nbsp;&nbsp;Crear&nbsp;&nbsp;&nbsp;&nbsp;</button>
                     </div>
                 </form>
-
             </main>
         </div>
     </body>

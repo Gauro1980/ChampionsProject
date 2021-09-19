@@ -121,8 +121,13 @@ legend{
 .campos{
     display: flex;
     flex-direction:column;
-    align-items:center;
-    justify-content: space-between;
+}
+.camposdobles{
+    display: flex;
+    flex-direction: row;
+}
+.margen{
+    margin: auto 5rem;
 }
 
 .datos{
