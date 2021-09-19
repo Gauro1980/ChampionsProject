@@ -19,52 +19,149 @@
 			rel="stylesheet"
 			integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
 			crossorigin="anonymous">
-	</head>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<!--Import Google Icon Font-->
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<!-- Compiled and minified CSS -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			
+		</head>
 	<body>
 
 		<header class="site-header inicio">
 			<h1>Torneo Local de Fútbol Inter Universitario </h1>
 
-			<div class="contenedor contenido-header">
+			<div class="contenedor-header">
 				<div class="barra">
 					<a href="index.html">
-						<img src="img/logo color en positivo horizontal@2x.png" alt="">
+						<img src="img/logo positivo horizontal@2x.png" alt="">
 					</a>
-
 					<nav class="navegacion1">
-						<a href="login.html">Login</a>
-						<a href="registro.html">Registro</a>
+						<a href="login.html">Ingrese</a>
+						<a href="registro.html">Regístrese</a>
 
 					</nav>
 					<div class="site-header">
-
+						<nav class="navegacion2">
 						<form action="../../form-result.php" method="post" target="_blank">
-							<label for="Menú">Menú Principal</label>
+							<label for="Menú">Partidos</label>
 							<select name="formularios" id="formularios">
 
 								<datalist id=formularios>
+									<option>
+										<a href="Registro Equipos.html">Ver Partidos</a>
+									</option>
+									<option>
+										<a href="Registrar Partidos.html">Registrar Partidos</a>
+									</option>
 									
-									<option>
-										<a href="Registro Equipos.html">Registro Equipos</a>
-									</option>
-									<option>
-										<a href="Registrar Partidos.html">Registro Partidos</a>
-									</option>
-									<option> Ver Partidos
-										
-									</option>
 								</datalist>
 							</select>
-							
-
 						</form>
+					</nav>
+						<nav class="navegacion3">
+						<form action="../../form-result.php" method="post" target="_blank">
+							<label for="Menú">Equipos</label>
+							<select name="formularios" id="formularios">
+	
+								<datalist id=formularios>
+										
+									<option>
+									<a href="Registro Equipos.html">UIS</a>
+										</option>
+										<option>
+											<a href="Registro Equipos.html">UFPS</a>
+										</option>
+										<option>
+											<a href="Registrar Partidos.html">UMB</a>
+										</option>
+										<option>
+											<a href="Registrar Partidos.html">EAN</a>
+										</option>
+										<option>
+											<a href="Registrar Partidos.html">ESAP</a>
+										</option>
+										<option>
+											<a href="Registrar Partidos.html">UNABN</a>
+										</option>
+										<option>
+											<a href="Registrar Partidos.html">UPB</a>
+										</option>
+										<option>
+											<a href="Registrar Partidos.html">SANTOTO</a>
+										</option>
+										<option>
+											<a href="Registrar Partidos.html">USB</a>
+										</option>
+										<option>
+											<a href="Registrar Partidos.html">UDES</a>
+										</option>
+										<option>
+											<a href="Registrar Partidos.html">UNAD</a>
+										</option>
+										<option>
+											<a href="Registrar Partidos.html">UNIMINUTO</a>
+										</option>
+										<option>
+											<a href="Registrar Partidos.html">UNIPAMPLONA</a>
+										</option>
+										<option>
+											<a href="Registrar Partidos.html">UTS</a>
+										</option>
+										
+									</datalist>
+								</select>
+							
+						</form>
+					</nav>
 
 					</div>
 				</div>
 			</div>
 		</header>
 		<main class="contenedor">
-			<!--<section class="contenedor seccion">-->
+			<!--<imágenes dinámicas>-->
+		<div class="Banner">
+			<div class="row">
+				<div class="col s12">
+					<div class="slider">
+						<ul class="slides">
+							<li>
+								<img src="fotos/Evelyn.jpg" alt=" ">
+								<div class="caption center-align">
+									<h3> UNAB MISION TIC 2022</h3>
+									<H5 class="light">UNAB</H5>
+	
+								</div>
+							</li>
+							<li>
+								<img src="fotos/Pelé.jpg" alt=" ">
+								<div class="caption center-align">
+									<h3> Motivación jugadores</h3>
+									<H5 class="light">Liga de Fútbol Universataria</H5>
+	
+								</div>
+							</li>
+							<li>
+								<img src="fotos/Alfonso-Lopez-09-1024x682.jpg" alt=" ">
+								<div class="caption center-align">
+									<h3> Estadios</h3>
+									<H5 class="light">los escenarios santandereanos de ChampionsProject</H5>
+	
+								</div>
+							</li>
+	
+						</ul>
+	
+					</div>
+	
+				</div>
+	
+			</div>
+	
+		</div>
 
 			<h2 class="fw-300 centrar-texto">Noticias del torneo</h2>
 
@@ -106,27 +203,39 @@
 			<!--</section>-->
 		</main>
 
-		<div class="contenedor seccion-inferior seccion">
-			<section class="Jugadores destacados de la fecha">
-				<h3>Jugadores destacados de la fecha</h3>
-
-				<img src="img/blog1.jpg" alt="Entrada de blog">
-
-			</section>
-
-			<section class="Enlaces">
-				<h3>Liga Fútbol Colombiano Betplay</h3>
-				<img src="img/blog1.jpg" alt="Entrada de blog">
+		<div class="contenedor logos-universidades">
+			<section class="participantes">
+				<h3> </h3>
+				<div>
+				<img src="fotos/logos universidades/ean.png" alt="EAN">
+				<img src="fotos/logos universidades/uniminuto.jpg" alt="UNIMINUTO">
+				<img src="fotos/logos universidades/unad.jpg" alt="UNAD">
+				<img src="fotos/logos universidades/ufps.png" alt="UFPS">
+				<img src="fotos/logos universidades/ucooperativa.png" alt="ucooperativa">
+				<img src="fotos/logos universidades/udi.png" alt="UDI">
+				<img src="fotos/logos universidades/uts.png" alt="UTS">
+				<img src="fotos/logos universidades/unipamplona.png" alt="UNAP">
+			</div>
+			<br>
+			<div>
+				<img src="fotos/logos universidadeS/santoto.jpg" alt="SANTOTO">
+				<img src="fotos/logos universidadeS/simonBolivar.png" alt="USB">
+				<img src="fotos/logos universidadeS/udes.jpg" alt="UDES">
+				<img src="fotos/logos universidadeS/uis.png" alt="UIS">
+				<img src="fotos/logos universidadeS/esap.png" alt="ESAP">
+				<img src="fotos/logos universidadeS/mbeltran.jpg" alt="mbeltran">
+				<img src="fotos/logos universidadeS/pontificia.png" alt="pontificia">
+				<img src="fotos/logos universidadeS/logoUnab.jpg" alt="UNAB">
+			</div>
 			</section>
 		</div>
 
-		<footer class="site-footer seccion">
+		<footer class="site-footer">
 			<div class="contenedor contenedor-footer">
 				<nav class="navegacion">
 					<a href="nosotros.html">Nosotros</a>
-					<a href="anuncios.html">Anuncios</a>
-					<a href="blog.html">Blog</a>
-					<a href="contacto.html">Contacto</a>
+					<a href="síganos.html">Anuncios</a>
+					<a href="contáctenos.html">Contacto</a>
 				</nav>
 				<p class="copyright">Todos los derechos reservados 2021 &copy;</p>
 			</div>
