@@ -29,15 +29,14 @@
                 </div>
             </header>
             <main>
-
                 <form action="#">
                     <legend>
-                        Llene el formulario para el registro:
+                        Diligencie los siguientes campos:
                     </legend>
                     <div class="campos">
                         <div class="datos">
-                            <label>Nombre Completo:</label>
-                            <input type="text" name="name" size="30"
+                            <label for="name">Nombre Completo:</label>
+                            <input type="text" name="name" id="name" size="30"
                                 placeholder="Ingrese nombre completo" required>
                             <span class="validar"></span>
                         </div>
@@ -63,15 +62,21 @@
                         <div class="datos">
                             <label>Repetir Contraseña:</label>
                             <input type="password" name="clave" size="30"
-                                placeholder="Repetir Contraseña" required>
+                                placeholder="Repita la Contraseña" required>
                             <span class="validar"></span>
                         </div>
-                        <div class="recordar">
-                            <label><input type="checkbox" name="recordar">Aceptar términos y políticas de privacidad</label>
+
+                        <div class="aceptar">
+                            <label for="caja">
+                                <input type="checkbox" name="caja" required>
+                                Aceptar términos y políticas de privacidad
+                            </label>
                         </div>
-                        <div class="boton">
-                            <a href="#">Crear Cuenta</a>
-                        </div>
+                    </div>
+                    <div class="boton">
+                        <button type="button" class="boton-envio"
+                            onclick="location.href='./index.html'">Cancelar</button>
+                        <button type="submit" class="boton-envio">Registrar</button>
                     </div>
                 </form>
 
