@@ -53,7 +53,7 @@ text-align: center;
     z-index: 10;
 }
 .menu{
-    background-color: var(--colorCabecera);    
+   background-color: var(--colorCabecera);
 }
 .menu ul{
     display: flex;
@@ -185,7 +185,7 @@ text-align: center;
     border-style: solid;
     border-color:var(--colorCabecera);
     border-width: 1px;
-    background-color: var(--colorcuadro);
+    background-color: #f4f7ff91;
     
 }
 .icono p{
@@ -244,6 +244,9 @@ border-width: 1px;
 .nav-pie a{
     font-size: 2rem;
     background-color: var(--colorOscuro);
+}
+.nav-pie a:hover{
+    background-color: var(--colorRosa);
 }
 .redes img{
     max-height: 5rem;
