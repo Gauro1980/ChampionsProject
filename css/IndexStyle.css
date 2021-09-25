@@ -3,11 +3,14 @@
     --colorOscuro: black ;
     --colorClaro: #ffffff;
     --colorRosa: #fd6f4c;
+    --colorRosaT: #fd6f4cc7;
+    --colorcuadro: #e1f9fcb9;
     }
 html{
       box-sizing:border-box;
       max-height: 100%;
       font-size: 62.5%;
+      font-family:'Krub', sans-serif;
 }
     *, *:before, *:after{
         box-sizing: inherit;
@@ -50,7 +53,7 @@ text-align: center;
     z-index: 10;
 }
 .menu{
-    background-color: var(--colorCabecera);    
+   background-color: var(--colorCabecera);
 }
 .menu ul{
     display: flex;
@@ -75,11 +78,11 @@ text-align: center;
 }
 
 .menu ul li {
-  position:relative;
-  float:left;
-  margin:0;
-  padding:0;
-}
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+  }
 
 .menu ul li:hover {
   background:var(--colorRosa);
@@ -91,6 +94,7 @@ text-align: center;
   top:100%;
   left:0;
 }
+
 .menu ul ul li {
     float:none;
     width:150px
@@ -130,116 +134,194 @@ text-align: center;
     background:var(--colorCabecera);
   }
 
+ /**********PARTICIPANTES**********/
+.participantes{
+    display: flex;
+    flex-direction: row;
+    text-align:right;
+    justify-content: space-between;
+    padding: 3rem;
+}
+.participantes div img{
+    max-height: 10rem;
+    margin: 1rem 1rem;
+}
 
-  /*Estilo para las noticias*/
+ /************Estilo para las noticias***********/
 
  .sesiones-menu{
     display: flex;
     flex-direction:row;
-    align-items:center;
-    padding: 2rem;
+    align-items:initial;
+   
     justify-content: space-between;
+    margin: 0 3rem;
 
 }
-.sesiones-menu img{
-    max-height: 20rem;
+.icono img{
+    display: flex;
+    justify-content:center;
+    max-height:20rem;
+
 }
 .centrar-texto{
     display:flex;
     justify-content: center;
+    font-weight: 600;
 }
 
 .icono{
-    padding: 2rem;
+    
     flex-basis: calc(33.3% - 1rem);
     display: flex;
     flex-direction: column;
-    justify-content:top 1rem;
+    justify-content: baseline;
+    border-style: solid;
+    border-color:var(--colorCabecera);
+    border-width: 1px;
+    background-color: #f4f7ff91;
+    
 }
+.icono p{
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 1rem;
+
+
+}
+.icono h3{
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+/**********Iconos universidades*/
 .contenedor{
-   /* background-image: url(../img/balon\ malla\ 35%.png);
-    background-repeat: no-repeat;
-    background-position: left;*/
 
     display: flex;
     font-size: 2rem;
     font-family: 'Krub', sans-serif;
     display: flex;
     flex-direction:column;
-    align-items: center;
-}
-nav{
-    background-color: black;
-}
-.site-footer{
-    background-color: black;
-}
-
-.site-footer{
-    flex-basis: 100%; 
-    display: flex;
-    flex-direction:  row;
-    justify-content:space-between;
-    font-size: 2rem;
-    line-height:2rem;
-   
-    display: var(--colorOscuro); 
-}
-
-@media(min-width: 768px){
-
-    .site-footer{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-}   
-.copyright{
-    background-color:var(--colorClaro);
-}
-
-.copyright{
-    font: var(--colorOscuro);
-}
-
-.copyright{
-
-    flex-basis: 100%; 
-    display: flex;
-    flex-direction:  row;
-    justify-content:center;
-    font-size:24px;line-height:20px;
-}
-/*PARTICIPANTES*/
-.participantes{
+    align-items:inherit;
+    background-image: url(../img/balon\ malla\ 35%.png);
+    background-position-y:top;
+    background-repeat: no-repeat;
     
+}
+.grupo{
+text-align: center;
+border-style:groove;
+border-width: 1px;
+}
+
+/*****************Pie de Pagina**************/
+.site-footer{
+    background-color: var(--colorOscuro);
+    color: var(--colorClaro);
+}
+.division{
     display: flex;
     flex-direction: row;
-    padding: 3rem;
+    align-items: center;
+}
+.imagen-copa{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+}
+.division img{    
+    max-height: 15rem;
+    padding: 1rem; 
+}
+
+.nav-pie a{
+    font-size: 2rem;
+    background-color: var(--colorOscuro);
+}
+.nav-pie a:hover{
+    background-color: var(--colorRosa);
+}
+.redes img{
+    max-height: 5rem;
+}
+.aliniacion-terminos{
+    display: flex;
+   flex-direction: row;
+   justify-content:start
+}
+.aliniacion-terminos h5{
+    border-right:solid;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    border-width: 1px;
+}
+
+.copyright h5{
+    text-align: center;  
+}
+.redes2{
+    background-color:--colorRosaT;
+    display: flex;
+    flex-direction: row;
+    justify-content:start
+}
+.redes2 img{
+    max-height: 5rem;
+}
+.button-holder{
+    background-color:--colorRosaT;
+    /*background-color:rgb(0, 68, 255);*/
+    border-top:thin solid #e5e5e5;
+    box-shadow:1px 1px 1px 1px #e5e5e5;
+    display: flex;
+   
+    width:50px;
+    }
+#button-holder img{
+    background-color:--colorRosaT;
+    margin:10px;
+    width:5rem; 
+    margin: 0.95em  0.2em  0 .15em;
+    padding:.4em 0 .4em .6em; 
+    flex-direction: row;
+    justify-content:right;
     
+    
+    }
+#search-text-input{
+    background-color:--colorRosaT;
+    border-top:thin solid  #e5e5e5;
+    border-right:thin solid #e5e5e5;
+    border: bottom 3px;
+    border-left:thin solid  #e5e5e5;
+    box-shadow:0px 1px 1px 1px #e5e5e5;
+    float:left;
+    height:center 30px;
+    margin:.8em 0 0 .5em; 
+    outline:0;
+    padding:.6em 0 .4em .6em; 
+    width:45rem;
+    font-family: 'Krub', sans-serif;
+    color: cornsilk;
+    display: flex;
+    justify-content:right;
+
+}
+.menu-buscar{
+    background-color:--colorRosaT;
+    background-color:rgb(27, 53, 109);
+    box-shadow:0px 1px 1px 1px #e5e5e5;
+    text-align:center;
+}
+.Resultados-fecha h3{
+    border-right:solid;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    border-width: 1px;
+    justify-content:right;
+    }
+.subtitulo{
+    text-align: center;   
 }
 
-.navegacion{
-
-    background-color: black;
-
-}
-
-.navegacion{
-
- flex-basis: 100%; 
- display: flex;
- justify-content: center;
-
-}
-.fondo-pie{
-    background-color: black;
-}
-.fondo-pie img{
-    max-width: 6rem;
-    width: 3rem;
-}
-
-.contenedor-footer{
-    background-color: black;
-}
