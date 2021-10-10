@@ -545,5 +545,28 @@ input:-moz-placeholder {
   left:0;
 }
 
+/*Introducción tratamiento*/
+.intro{
 
+  color:#fff;
+  text-decoration:none;
+  font-weight:800px;
+  font-size:10rem;
+  font-family:'Krub', sans-serif;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  text-align: center;
+  display: block;
+}
+.icono{
+    
+  text-decoration:none;
+  font-weight:800px;
+  font-size:10rem;
+  font-family:'Krub', sans-serif;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  
+
+}
 
