@@ -17,7 +17,66 @@
 </head>
 
 <body>
- 
+    <!---- <header>
+            <div class="fondo">
+
+                <div class="barra-titulo">
+                    <div class="logo">
+                        <a href="./index.html"><img src="img/logo color  en positivo horizontal@2x.png"
+                            alt="" ></a>
+                    </div>
+                    <div class="letras">
+                        <div class="titulo">
+                            <h1>Torneo Local de Fútbol Inter Universitario</h1>
+                        </div>
+                        <nav class="barra-menu">
+                            <nav class="menu">
+                                <ul>
+                                    <li><a href="#">Partidos <i class="fas fa-chevron-down fa-1x"></i></a>
+                                        <ul>
+                                            <li><a href="#">Ver Partidos</a></li>
+                                            <li><a href="./Registrar_Partidos.html">Crear Partidos</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Equipos <i class="fas fa-chevron-down fa-1.5x"></i></a>
+                                        <ul>
+                                            <li><a href="./Registro_Equipos.html">Registrar Equipo</a></li>
+                                            <li><a href="./index.html#universidades">GRUPO A</a></li>
+                                                
+                                            <li><a href="./index.html#universidades">GRUPO B</a></li>
+                                                
+                                            <li><a href="./index.html#universidades">GRUPO C</a></li>
+                                                
+                                            <li><a href="./index.html#universidades">GRUPO D</a></li>
+                                            
+                                            <ul>
+                                            
+                                            <li><a href="#">UDI</a></li>
+                                            <li><a href="#">UTS</a></li>
+                                            <li><a href="#">UNAP</a></li>
+                                            <li><a href="#">UPB</a></li>
+                                            </ul>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Otros <i class="fas
+                                                fa-chevron-down fa-1x"></i></a>
+                                        <ul>
+                                            <li><a href="#">Ver Reglamento</a></li>
+                                            <li><a href="#noticias">Noticias</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </nav>
+                            <nav class="menu-link">
+                                <a href="./login.html">Ingresar</a>
+                                <a href="./registro.html">Registrarse</a>
+                            </nav>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>-->
     <header>
         <div class="fondo">
 
@@ -92,51 +151,35 @@
     </header>
     <main>
         <hr>
-        <section>
-            <div class="container section">
-
-            </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                    var elems = document.querySelectorAll('.slider');
-                    var instances = M.Slider.init(elems, { interval: 8000 });
-
-                    var elems = document.querySelectorAll('.materiaboxed');
-                    var instances = M.Materialbox.init(elems);
-                });
-            </script>
-        </section>
-        <section id="noticias">
-            <hr>
-
-            <h2 class="centrar-texto">Ponga aquí su título</h2>
-
-            <div class="sesiones-menu">
-
-                <div class="icono">
-                    <img src="*.jpg" alt="sesion menu">
-                    <h3>Ponga aquí su subtítulo</h3>
-                    <p>Contenido1
-                    </p>
-
+        <hr>
+        <section id="contacto" class="contacto">
+            <h2>Contáctanos</h2>
+            <form action="#">
+                <legend>
+                    Contáctanos con el siguiente formulario:
+                </legend>
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label>Nombre:</label>
+                        <input type="text" name="nombre" placeholder="Digite su nombre">
+                    </div>
+                    <div class="campo">
+                        <label>Teléfono:</label>
+                        <input type="text" name="telefono" placeholder="Digite un teléfono">
+                    </div>
+                    <div class="campo w-100">
+                        <label>Correo:</label>
+                        <input type="email" name="Correo" placeholder="Digite un correo">
+                    </div>
+                    <div class="campo w-100">
+                        <label>Mensaje:</label>
+                        <textarea name="Mensaje" id="" cols= "30" rows="4"> </textarea>
+                    </div>
                 </div>
-                <div class="icono">
-                    <img src="*.jpg" alt="contenido 2">
-                    <h3>Ponga aquí su subtítulo</h3>
-                    <p>Contenido2
-                    </p>
-
+                <div class="enviar">
+                    <input type="submit" class="boton" value="ENVIAR">
                 </div>
-                <div class="icono">
-                    <img src="*.jpg" alt="Universidades
-                            Participantes">
-                    <h3>Ponga aquí su subtítulo</h3>
-                    <p>Contenido3
-                    </p>
-
-                </div>
-            </div>
+            </form>
 
         </section>
         <section id="universidades">
