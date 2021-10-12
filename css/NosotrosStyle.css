@@ -205,6 +205,45 @@ margin: 2rem ;
     font-weight: 600;
     
 }
+.sesiones-menu .perfil {
+    display: flex;
+    flex-direction:row;
+    align-items:initial;
+    border-color: var(--colorClaro) ;
+    border-radius: 2rem;
+    border-style: solid;
+    justify-content: space-between;
+    margin: 0 3rem;
+    background-color: #f4f7ffb4;
+    border-width: 1px;
+    box-shadow: 10px 5px 0px 0px #345a5277;
+}
+.perfil p{
+    font-size: 1.5rem ;
+    text-align:justify;
+    padding: 1rem;
+}
+.perfil h3{
+    text-align:center;
+    padding: 1rem;
+}
+#nosotros{
+    background-image: url("../fotos/canchafutbol.jpg");
+    background-repeat: no-repeat;
+    background-size:inherit ;
+    background-size: 100%;
+}
+
+#nosotros-1 .sesiones-menu{
+    display: flex;
+    flex-direction:row;
+
+}
+#nosotros-2 .sesiones-menu{
+    display: flex;
+    flex-direction:row;
+
+}
 /**********Iconos universidades*/
 .contenedor{
 
@@ -216,9 +255,9 @@ margin: 2rem ;
     align-items:inherit;
     background-image: url(../img/balon\ malla\ 35%.png);
     background-position-y:top;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;   
 }
+
 .grupo{
 text-align: center;
 border-style:groove;
