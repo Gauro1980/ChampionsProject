@@ -1,269 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Krub">
-        <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet"
-              integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Krub">
+    <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
-        <!--<link rel="stylesheet" type="text/css" href="css/normalize.css">-->
-        <!--<link rel="stylesheet" type="text/css" href="css/IndexStyle.css">-->
-        <link rel="stylesheet" type="text/css" href="css/NosotrosStyle.css">
-        <link rel="stylesheet" type="text/css" href="css/IndexStyle.css">
-        <title>Inicio</title>
-    </head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="css/IndexStyle.css">-->
+    <link rel="stylesheet" type="text/css" href="css/OtrosStyle.css">
+    <title>Inicio</title>
+</head>
 
-    <body>
+<body>
+ 
+    <header>
+        <div class="fondo">
 
-        <header>
-            <div class="fondo">
-
-                <div class="barra-titulo">
-                    <div class="logo">
-                        <a href="./main_administrador.jsp"><img src="img/logo color  en positivo horizontal@2x.png"
-                                                                alt="" ></a>
+            <div class="barra-titulo">
+                <div class="logo">
+                    <a href="./index.html"><img src="img/logo color  en positivo horizontal@2x.png" alt=""></a>
+                </div>
+                <div class="letras">
+                    <div class="titulo">
+                        <h3>Torneo Local de Fútbol Inter Universitario</h3>
                     </div>
-                    <div class="letras">
-                        <div class="titulo">
-                            <h1>Torneo Local de Fútbol Inter Universitario</h1>
-                        </div>
-                        <nav class="barra-menu">
-                            <nav class="menu">
-                                <ul>
-                                    <li><a href="#">Partidos <i class="fas fa-chevron-down fa-1x"></i></a>
+                    <nav class="barra-menu">
+                        <nav class="menu">
+                            <ul>
+                                <li><a href="#">Partidos <i class="fas fa-chevron-down fa-1x"></i></a>
+                                    <ul>
+                                        <li><a href="#">Ver Partidos</a></li>
+                                        <li><a href="./Registrar_Partidos.html">Crear Partidos</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Equipos <i class="fas fa-chevron-down fa-1.5x"></i></a>
+                                    <ul>
+                                        <li><a href="./Registro_Equipos.html">Registrar Equipo</a></li>
+                                        <li><a href="./index.html#universidades">GRUPO A</a></li>
+
+                                        <li><a href="./index.html#universidades">GRUPO B</a></li>
+
+                                        <li><a href="./index.html#universidades">GRUPO C</a></li>
+
+                                        <li><a href="./index.html#universidades">GRUPO D</a></li>
+
                                         <ul>
-                                            <li><a href="./busqueda.jsp">Ver Partidos</a></li>
-                                            <li><a href="./crud/cargueDatos.jsp">Crear Partidos</a></li>
+
+                                            <li><a href="#">UDI</a></li>
+                                            <li><a href="#">UTS</a></li>
+                                            <li><a href="#">UNAP</a></li>
+                                            <li><a href="#">UPB</a></li>
                                         </ul>
-                                    </li>
-                                    <li><a href="#">Equipos <i class="fas fa-chevron-down fa-1.5x"></i></a>
-                                        <ul>
-
-                                            <li><a href="./main_administrador.jsp#universidades">GRUPO A</a></li>
-
-                                            <li><a href="./main_administrador.jsp#universidades">GRUPO B</a></li>
-
-                                            <li><a href="./main_administrador.jsp#universidades">GRUPO C</a></li>
-
-                                            <li><a href="./main_administrador.jsp#universidades">GRUPO D</a></li>
-
-
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Otros <i class="fas
-                                                             fa-chevron-down fa-1x"></i></a>
-                                        <ul>
-                                            <li><a href="./Reglamento.html">Ver Reglamento</a></li>
-                                            <li><a href="./main_administrador.jsp#noticias">Noticias</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                            </nav>
-                            <nav class="menu-link">
-                                <section class="barra_buscar">
-                                    <form action="./crud/consultar.jsp" method="post" id="search">		    
-                                        <input type="search" id="consulta" name="consulta" placeholder="Buscar equipo..." >		    	
-                                        <button class="fa fa-search" aria-hidden="true"></button>
-                                    </form>
-                                </section>
-                                <a href="./cerrar.jsp">Salir</a>
-                            </nav>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Otros <i class="fasfa-chevron-down fa-1x"></i></a>
+                                    <ul>
+                                        <li><a href="Reglamento.html">Reglamento</a></li>
+                                        <li><a href="Tratamiento_Datos.html">Política de Uso</a></li>
+                                    </ul>
+                                </li>
                         </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <main>
-            <hr>
-            <section>
-                <div class="container section">
-
-                </div>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-                <script>
-                    document.addEventListener('DOMContentLoaded', function () {
-                        var elems = document.querySelectorAll('.slider');
-                        var instances = M.Slider.init(elems, {interval: 8000});
-
-                        var elems = document.querySelectorAll('.materiaboxed');
-                        var instances = M.Materialbox.init(elems);
-                    });
-                </script>
-            </section>
-            <section id="reglamento">
-
-
-                <h3 class="centrar-texto">ChampionsProject S.A.S.</h3><br>
-                <h4 class="centrar-texto">Reglamento del Torneo</h4>
-                <div class="intro">
-                    <h5 class="intro">En este documento se encuentra especificada la normatividad y procedimientos que regirán el evento deportivo
-                        virtual organizado a través de la Plataforma Champions Project y el docente de la Sede.</h5>
-                </div>
-
-                <div class="icono">
-                    <h5> CAPÍTULO I: Objetivos</h5>                                                     
-                    <h5>1.1. Objetivo General: </h5>
-                    Promover el uso adecuado del tiempo libre, mediante actividades de fácil participación para la comunidad 
-                    universitaria, y la utilización de plataforma virtuales como un excelente medio de integración familiar y conservación 
-                    de la salud física y mental.
-                    1.2. Objetivos Específicos: 
-                    1. Propiciar espacios de mejoramiento de la calidad de vida de los participantes.
-                    2. Incentivar la cultura de participación en eventos deportivos virtuales.
-                    3. Despertar interés para la práctica deportiva y el sano esparcimiento.
-                    <h5>CAPÍTULO II: Participantes</h5>                                                     
-                    2.1. Podrán participar en el torneo, todas aquellas personas que se encuentren en el momento de inscripción 
-                    vinculadas legalmente y bajo la normatividad de las universidades afiliandas como: Docentes, Trabajadores y 
-                    Estudiantes de pregrado.
-                    PARÁGRAFO UNO: Además, los inscriptos deben cumplir los siguientes requisitos:
-                     Acceder a la página oficial de ChampiosProject ChampiosProject 2021
-                     Conocimiento suficiente en el manejo y utilización del software Championsproject
-
-
-                    <h5>CAPÍTULO III:INSCRIPCIONES Y ACREDITACIONES</h5>
-                    3.1. Las inscripciones se realizarán en la página web Champions Project, hasta el lunes 30 de noviembre 
-                    de 2020, a las 11:59 pm. El congreso técnico se realizará el día martes 1 de diciembre de 2020, a las 4:00 pm. La 
-                    organización validara las inscripciones de todos los participantes.
-
-
-                    <h5>4. CAPÍTULO IV:ESTAMENTOS</h5>
-                    4.1. Dirección: El Comité Organizador, será la máxima autoridad y tiene plena autonomía para reglamentar, 
-                    interpretar normas y adoptar las medidas de carácter técnico, disciplinario o administrativo que considere 
-                    necesarias para el normal desarrollo de este torneo.
-
-                    <h5>5. CAPÍTULO V:NORMAS TECNICAS</h5>
-                    5.1. SISTEMA DE JUEGO: Se jugará según el número de participantes inscritos, así:
-                     Por eliminación sencilla
-                     Si son menos de seis (6) participantes se jugará todos contra todos
-                     Si son más de seis (6) se sorteará por grupos y las siguientes fases se desarrollarán mediante eliminación 
-                    sencilla.
-
-                    e-mail: champions.project21@gmail.com
-                    ChampionsProject
-                    Línea de Deportes y Recreación
-                    5.2. PUNTUACION: Se otorgarán Tres (3) puntos por partido ganado, uno (1) por partido empatado, cero (0) 
-                    por partido perdido o por W.O.
-                    PARÁGRAFO DOS: Participante que pierda por w.o. queda eliminado del torneo y dará la victoria al participante 
-                    contrario con un marcador de tres (3) Goles a cero (0). Perderá por W.O. cuando:
-                     No se presente al encuentro dentro del tiempo reglamentario de espera que son diez (10) minutos.
-                     Se retire sin que se haya concluido el encuentro.
-                    5.3. DESEMPATES: - En la fase eliminatoria o de grupo, en caso de presentarse empate entre dos 
-                    participantes, se tendrá en cuenta en estricto orden entre los empatados:
-                     Ganador del encuentro entre ellos
-                     Mayor número de Goles Diferencia
-                     Mayor número de goles a favor
-                     Menor número de goles en contra
-                     Sorteo.
-                    - En caso de presentarse empate entre más de dos participantes, se tendrá en cuenta en estricto orden entre los 
-                    empatados: 
-                     Mayor número de Goles Diferencia
-                     Mayor número de goles a favor
-                     Menor número de goles en contra
-                     Sorteo.
-
-                    <h5>6. CAPITULO VI: Normas Disciplinarias</h5>
-                    A través  que será el medio de comunicación entre la organización y los participantes, 
-                    igualmente, los encuentros se programarán los días miércoles y viernes de cada semana en el horario 
-                    comprendido de 5.00 a 10:00 pm., o los días que se requieran por organización, al finalizar cada encuentro el 
-                    ganador debe enviar a la sección contácnos de la página web de la organización, el pantallazo del resultado, especificando los 
-                    nombres de los competidores, quien gano y quien perdió dicho encuentro, o empate, y el resultado del mismo. 
-                    - En este evento deportivo se premiarán a los participantes que ocupen los tres (3) primeros lugares, de acuerdo a 
-                    los recursos asignados para el evento. 
-                    - Toda reclamación relacionada con el desarrollo del torneo, por presunta violación de las normas reglamentadas 
-                    en este documento, deberán ser presentada por escrito al Comité Organizador, por el competidor, acompañada de 
-                    las pruebas pertinentes, hasta las ocho (8) horas hábiles de sucedido la presunta violación del reglamento.
-                    - Los casos no contemplados en el presente reglamento serán resueltos con la prontitud requerida por la instancia 
-                    de la Organización a la cual corresponda. 
-                    Dado en Bucaramanga a los 11 días del mes de octubre de 2021.
-
-                </div>
-
-
-                </div>
-
-            </section>
-            <section id="universidades">
-                <hr>
-                <div class="contenedor logos-universidades">
-                    <section class="participantes">
-                        <div class="grupo">
-                            <h2>GRUPO A</h2>
-                            <img src="fotos/logosUni/ean.png" alt="EAN">
-                            <img src="fotos/logosUni/uniminuto.jpg" alt="UNIMINUTO">
-                            <img src="fotos/logosUni/unad.jpg" alt="UNAD">
-                            <img src="fotos/logosUni/ufps.png" alt="UFPS">
+                        <div class="searchbox">
+                            <form>
+                                <input type="text" placeholder=" Search...." name="search" id="search" required>
+                                <button type="submit">Submit</button>
+                            </form>
                         </div>
-
-                        <div class="grupo">
-                            <h2>GRUPO B</h2>
-
-                            <img src="fotos/logosUni/ucooperativa.jpg" alt="ucooperativa">
-                            <img src="fotos/logosUni/udi.png" alt="UDI">
-                            <img src="fotos/logosUni/uts.png" alt="UTS">
-                            <img src="fotos/logosUni/unipamplona.png" alt="UNAP">
-                        </div>
-
-                        <div class="grupo">
-                            <h2>GRUPO C</h2>
-                            <img src="fotos/logosUni/santoto.jpg" alt="SANTOTO">
-                            <img src="fotos/logosUni/simonBolivar.png" alt="USB">
-                            <img src="fotos/logosUni/udes.jpg" alt="UDES">
-                            <img src="fotos/logosUni/uis.png" alt="UIS">
-                        </div>
-
-                        <div class="grupo">
-                            <h2>GRUPO D</h2>
-                            <img src="fotos/logosUni/esap.png" alt="ESAP">
-                            <img src="fotos/logosUni/mbeltran.jpg" alt="mbeltran">
-                            <img src="fotos/logosUni/pontificia.jpg" alt="pontificia">
-                            <img src="fotos/logosUni/logoUnab.jpg" alt="UNAB">
-                        </div>
-
-                    </section>
-                </div>
-
-            </section>
-        </main>
-
-        <footer class="site-footer">
-            <div class="division">
-                <div class="imagen-copa">
-                    <img src="./img/logo color en negativo2x.png" alt="">
-                </div>
-                <div class="centro-pie">
-                    <nav class="nav-pie">
                         <ul>
-                            <li><a href="#">INICIO</a></li>
-                            <li><a href="Nosotros.html">NOSOTROS</a></li>
-                            <li><a href="enviar_contacto.html">CONTACTENOS</a></li>
-                            <li><a href="./main_administrador.jsp#noticias">NOTICIAS</a></li>
-                            <li><a href="busqueda.jsp">RESULTADOS</a></li>
-                            <li><a href="./main_administrador.jsp#universidades">EQUIPOS</a></li>
-                        </ul>
+                            <li><a href="Index.html">SALIR <i class="fasfa-chevron-down fa-1x"></i></a>
+                            </li>
+
+                        </ul>   
+                        
+                       
                     </nav>
-                    <div class="redes">
-                        <a href="https://twitter.com/Championsprojec?s=09" target="_blank" rel="noopener noreferrer"><img src="./img/Logo twiter.png" alt=""></a>
-                        <a href="https://www.facebook.com/championsproject21/" target="_blank" rel="noopener noreferrer"><img src="./img/logo facebook.png" alt=""></a>
-                        <a href="https://www.instagram.com/championsproject5/" target="_blank" rel="noopener noreferrer"><img src="./img/logo instagram.png" alt=""></a>    
+
+                    </nav>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </header>
+    <main>
+        <hr>
+        <section>
+            <div class="container section">
+
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.slider');
+                    var instances = M.Slider.init(elems, { interval: 8000 });
+
+                    var elems = document.querySelectorAll('.materiaboxed');
+                    var instances = M.Materialbox.init(elems);
+                });
+            </script>
+        </section>
+        <section id="reglamento">
+           
+            
+            <h3 class="centrar-texto">ChampionsProject S.A.S.</h3><br>
+            <h4 class="centrar-texto">Reglamento del Torneo</h4>
+            <div class="intro">
+            <h5 class="intro">En este documento se encuentra especificada la normatividad y procedimientos que regirán el evento deportivo
+                virtual organizado a través de la Plataforma Champions Project y el docente de la Sede.</h5>
+            </div>
+
+            <div class="icono">
+                <h5> CAPÍTULO I: Objetivos</h5>                                                     
+                <h5>1.1. Objetivo General: </h5>
+                Promover el uso adecuado del tiempo libre, mediante actividades de fácil participación para la comunidad 
+                universitaria, y la utilización de plataforma virtuales como un excelente medio de integración familiar y conservación 
+                de la salud física y mental.
+                1.2. Objetivos Específicos: 
+                1. Propiciar espacios de mejoramiento de la calidad de vida de los participantes.
+                2. Incentivar la cultura de participación en eventos deportivos virtuales.
+                3. Despertar interés para la práctica deportiva y el sano esparcimiento.
+                <h5>CAPÍTULO II: Participantes</h5>                                                     
+                2.1. Podrán participar en el torneo, todas aquellas personas que se encuentren en el momento de inscripción 
+                vinculadas legalmente y bajo la normatividad de las universidades afiliandas como: Docentes, Trabajadores y 
+                Estudiantes de pregrado.
+                PARÁGRAFO UNO: Además, los inscriptos deben cumplir los siguientes requisitos:
+                 Acceder a la página oficial de ChampiosProject ChampiosProject 2021
+                 Conocimiento suficiente en el manejo y utilización del software Championsproject
+                
+
+                <h5>CAPÍTULO III:INSCRIPCIONES Y ACREDITACIONES</h5>
+                3.1. Las inscripciones se realizarán en la página web Champions Project, hasta el lunes 30 de noviembre 
+                de 2020, a las 11:59 pm. El congreso técnico se realizará el día martes 1 de diciembre de 2020, a las 4:00 pm. La 
+                organización validara las inscripciones de todos los participantes.
+                
+
+                <h5>4. CAPÍTULO IV:ESTAMENTOS</h5>
+                4.1. Dirección: El Comité Organizador, será la máxima autoridad y tiene plena autonomía para reglamentar, 
+                interpretar normas y adoptar las medidas de carácter técnico, disciplinario o administrativo que considere 
+                necesarias para el normal desarrollo de este torneo.
+
+                <h5>5. CAPÍTULO V:NORMAS TECNICAS</h5>
+                5.1. SISTEMA DE JUEGO: Se jugará según el número de participantes inscritos, así:
+                 Por eliminación sencilla
+                 Si son menos de seis (6) participantes se jugará todos contra todos
+                 Si son más de seis (6) se sorteará por grupos y las siguientes fases se desarrollarán mediante eliminación 
+                sencilla.
+                
+                e-mail: champions.project21@gmail.com
+                ChampionsProject
+                Línea de Deportes y Recreación
+                5.2. PUNTUACION: Se otorgarán Tres (3) puntos por partido ganado, uno (1) por partido empatado, cero (0) 
+                por partido perdido o por W.O.
+                PARÁGRAFO DOS: Participante que pierda por w.o. queda eliminado del torneo y dará la victoria al participante 
+                contrario con un marcador de tres (3) Goles a cero (0). Perderá por W.O. cuando:
+                 No se presente al encuentro dentro del tiempo reglamentario de espera que son diez (10) minutos.
+                 Se retire sin que se haya concluido el encuentro.
+                5.3. DESEMPATES: - En la fase eliminatoria o de grupo, en caso de presentarse empate entre dos 
+                participantes, se tendrá en cuenta en estricto orden entre los empatados:
+                 Ganador del encuentro entre ellos
+                 Mayor número de Goles Diferencia
+                 Mayor número de goles a favor
+                 Menor número de goles en contra
+                 Sorteo.
+                - En caso de presentarse empate entre más de dos participantes, se tendrá en cuenta en estricto orden entre los 
+                empatados: 
+                 Mayor número de Goles Diferencia
+                 Mayor número de goles a favor
+                 Menor número de goles en contra
+                 Sorteo.
+                
+                <h5>6. CAPITULO VI: Normas Disciplinarias</h5>
+                A través  que será el medio de comunicación entre la organización y los participantes, 
+                igualmente, los encuentros se programarán los días miércoles y viernes de cada semana en el horario 
+                comprendido de 5.00 a 10:00 pm., o los días que se requieran por organización, al finalizar cada encuentro el 
+                ganador debe enviar a la sección contácnos de la página web de la organización, el pantallazo del resultado, especificando los 
+                nombres de los competidores, quien gano y quien perdió dicho encuentro, o empate, y el resultado del mismo. 
+                - En este evento deportivo se premiarán a los participantes que ocupen los tres (3) primeros lugares, de acuerdo a 
+                los recursos asignados para el evento. 
+                - Toda reclamación relacionada con el desarrollo del torneo, por presunta violación de las normas reglamentadas 
+                en este documento, deberán ser presentada por escrito al Comité Organizador, por el competidor, acompañada de 
+                las pruebas pertinentes, hasta las ocho (8) horas hábiles de sucedido la presunta violación del reglamento.
+                - Los casos no contemplados en el presente reglamento serán resueltos con la prontitud requerida por la instancia 
+                de la Organización a la cual corresponda. 
+                Dado en Bucaramanga a los 11 días del mes de octubre de 2021.
+                
+            </div>
+
+               
+            </div>
+
+        </section>
+        <section id="universidades">
+            <hr>
+            <div class="contenedor logos-universidades">
+                <section class="participantes">
+                    <div class="grupo">
+                        <h2>GRUPO A</h2>
+                        <img src="fotos/logosUni/ean.png" alt="EAN">
+                        <img src="fotos/logosUni/uniminuto.jpg" alt="UNIMINUTO">
+                        <img src="fotos/logosUni/unad.jpg" alt="UNAD">
+                        <img src="fotos/logosUni/ufps.png" alt="UFPS">
                     </div>
-                    <div class="terminos">
-                        <div class="aliniacion-terminos">
-                            <a href="Tratamiento_Datos.html"><h5>PolÍticas de privacidad</h5></a>
-                            <a href="Tratamiento_Datos.html"><h5>Aviso Legal</h5></a>
-                        </div>
+
+                    <div class="grupo">
+                        <h2>GRUPO B</h2>
+
+                        <img src="fotos/logosUni/ucooperativa.jpg" alt="ucooperativa">
+                        <img src="fotos/logosUni/udi.png" alt="UDI">
+                        <img src="fotos/logosUni/uts.png" alt="UTS">
+                        <img src="fotos/logosUni/unipamplona.png" alt="UNAP">
+                    </div>
+
+                    <div class="grupo">
+                        <h2>GRUPO C</h2>
+                        <img src="fotos/logosUni/santoto.jpg" alt="SANTOTO">
+                        <img src="fotos/logosUni/simonBolivar.png" alt="USB">
+                        <img src="fotos/logosUni/udes.jpg" alt="UDES">
+                        <img src="fotos/logosUni/uis.png" alt="UIS">
+                    </div>
+
+                    <div class="grupo">
+                        <h2>GRUPO D</h2>
+                        <img src="fotos/logosUni/esap.png" alt="ESAP">
+                        <img src="fotos/logosUni/mbeltran.jpg" alt="mbeltran">
+                        <img src="fotos/logosUni/pontificia.jpg" alt="pontificia">
+                        <img src="fotos/logosUni/logoUnab.jpg" alt="UNAB">
+                    </div>
+
+                </section>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="division">
+            <div class="imagen-copa">
+                <img src="./img/logo color en negativo2x.png" alt="">
+            </div>
+            <div class="centro-pie">
+                <nav class="nav-pie">
+                    <ul>
+                        <li><a href="Index.html">INICIO</a></li>
+                        <li><a href="Nosotros.html">NOSOTROS</a></li>
+                        <li><a href="Contactanos.html">CONTACTENOS</a></li>
+                         <!--<li><a href="Noticias..html">NOTICIAS</a></li>--> 
+                        <li><a href="Resultados-Partidos.html">RESULTADOS</a></li>
+                        <li><a href="#universidades">EQUIPOS</a></li>
+                    </ul>
+                </nav>
+                <div class="redes2">
+                    <div class="twitter">
+                        <a href="https://twitter.com/Championsprojec?s=09"><img src="./img/Logo twiter.png" alt="">
+                        </a>
+                    </div>
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/championsproject21/">
+                            <img src="./img/logo facebook.png" alt="">
+                        </a>
+                    </div>
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/invites/contact/?i=10wn4gmm8p9j7&utm_content=mp3ervm"><img
+                                src="./img/logo instagram.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="terminos">
+                    <div class="aliniacion-terminos">
+                        
+                        <li><a href="index.html"><h5>PolÍticas de privacidad</h5></a></li>
+                    
+                        <li><a href="index.html"><h5>Aviso Legal</h5></a></li>
                     </div>
                 </div>
             </div>
-            <hr>
-            <div class="copyright">
-                <h5>Todos los derechos reservados 2021 ©</h5>
-            </div>
-        </footer>
-    </body>
+        </div>
+        <hr>
+        <div class="copyright">
+            <h5>Todos los derechos reservados 2021 ©</h5>
+        </div>
+
+    </footer>
+</body>
 
 </html>
