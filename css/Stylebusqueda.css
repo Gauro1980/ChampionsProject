@@ -1,0 +1,33 @@
+:root{
+    --colorCabecera: #4a79f0;
+    --colorOscuro: black ;
+    --colorClaro: #ffffff;
+    --colorRosa: #fd6f4c;
+    --colorRosaT: #fd6f4cc7;
+    --colorcuadro: #e1f9fcb9;
+    }
+.tablas{
+    display:flex;
+
+        
+}
+
+.seccion_equipos{
+    flex-basis: calc(40% - 1rem);
+}
+
+.seccion_busqueda{
+    flex-basis: calc(50% - 1rem);
+    margin: 0 auto;
+    
+
+}
+td{
+    text-align: center;
+    vertical-align:middle;
+}
+
+thead{
+    background-color: var(--colorRosa)};    
+    
+}

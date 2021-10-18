@@ -29,10 +29,11 @@
                 </div>
             </header>
             <main>
-                <form action="#">
+                <form method="post" action="./crud/registro.jsp">
                     <legend>
                         Diligencie los siguientes campos:
                     </legend>
+                 
                     <div class="campos">
                         <div class="datos">
                             <label for="name">Nombre Completo:</label>
@@ -59,31 +60,22 @@
                                 placeholder="Ingrese su contraseña" required>
                             <span class="validar"></span>
                         </div>
-                        <div class="datos">
+                        <div class="datos" style="display: none">
                             <label>Repetir Contraseña:</label>
                             <input type="password" name="clave" size="30"
-                                placeholder="Repita la Contraseña" required>
+                                placeholder="Repita la Contraseña" >
                             <span class="validar"></span>
                         </div>
+
                         <div class="aceptar">
-                        <a class = "cmp-button_action cq-dd-linkTo"
-                         href="Index.html"
-                        role= "button" target="_self">
-                        <div class="cmp-button_text-wrapper"> 
-                        <h2>Aceptar Términos y políticas de privacidad</h2>
-
-                        </div>
-                        <div class= "cmp-button_arrow-wrapper">
-                        
-                    </div>
-                        </a>
-
                             <label for="caja">
                                 <input type="checkbox" name="caja" required>
-                                Aceptar 
+                                Aceptar términos y políticas de privacidad
+                                
                             </label>
                         </div>
                     </div>
+             
                     <div class="boton">
                         <button type="button" class="boton-envio"
                             onclick="location.href='./index.html'">Cancelar</button>

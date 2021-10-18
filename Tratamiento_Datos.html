@@ -1,293 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Krub">
-    <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet"
-        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Krub">
+        <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet"
+              integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">-->
-    <link rel="stylesheet" type="text/css" href="css/OtrosStyle.css">
-    <title>Inicio</title>
-</head>
+        <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css">-->
+        <link rel="stylesheet" type="text/css" href="css/NosotrosStyle.css">
+        <link rel="stylesheet" type="text/css" href="css/IndexStyle.css">
+        <title>Inicio</title>
+    </head>
 
-<body>
- 
-    <header>
-        <div class="fondo">
+    <body>
 
-            <div class="barra-titulo">
-                <div class="logo">
-                    <a href="./index.html"><img src="img/logo color  en positivo horizontal@2x.png" alt=""></a>
-                </div>
-                <div class="letras">
-                    <div class="titulo">
-                        <h3>Torneo Local de Fútbol Inter Universitario</h3>
+        <header>
+            <div class="fondo">
+
+                <div class="barra-titulo">
+                    <div class="logo">
+                        <a href="./main_administrador.jsp"><img src="img/logo color  en positivo horizontal@2x.png"
+                                                                alt="" ></a>
                     </div>
-                    <nav class="barra-menu">
-                        <nav class="menu">
-                            <ul>
-                                <li><a href="#">Partidos <i class="fas fa-chevron-down fa-1x"></i></a>
-                                    <ul>
-                                        <li><a href="#">Ver Partidos</a></li>
-                                        <li><a href="./Registrar_Partidos.html">Crear Partidos</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Equipos <i class="fas fa-chevron-down fa-1.5x"></i></a>
-                                    <ul>
-                                        <li><a href="./Registro_Equipos.html">Registrar Equipo</a></li>
-                                        <li><a href="./index.html#universidades">GRUPO A</a></li>
-
-                                        <li><a href="./index.html#universidades">GRUPO B</a></li>
-
-                                        <li><a href="./index.html#universidades">GRUPO C</a></li>
-
-                                        <li><a href="./index.html#universidades">GRUPO D</a></li>
-
+                    <div class="letras">
+                        <div class="titulo">
+                            <h1>Torneo Local de Fútbol Inter Universitario</h1>
+                        </div>
+                        <nav class="barra-menu">
+                            <nav class="menu">
+                                <ul>
+                                    <li><a href="#">Partidos <i class="fas fa-chevron-down fa-1x"></i></a>
+                                        <ul>
+                                            <li><a href="./busqueda.jsp">Ver Partidos</a></li>
+                                            <li><a href="./crud/cargueDatos.jsp">Crear Partidos</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Equipos <i class="fas fa-chevron-down fa-1.5x"></i></a>
                                         <ul>
 
-                                            <li><a href="#">UDI</a></li>
-                                            <li><a href="#">UTS</a></li>
-                                            <li><a href="#">UNAP</a></li>
-                                            <li><a href="#">UPB</a></li>
+                                            <li><a href="./main_administrador.jsp#universidades">GRUPO A</a></li>
+
+                                            <li><a href="./main_administrador.jsp#universidades">GRUPO B</a></li>
+
+                                            <li><a href="./main_administrador.jsp#universidades">GRUPO C</a></li>
+
+                                            <li><a href="./main_administrador.jsp#universidades">GRUPO D</a></li>
+
+
                                         </ul>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Otros <i class="fasfa-chevron-down fa-1x"></i></a>
-                                    <ul>
-                                        <li><a
-                                                href="https://bogota20201.ascundeportes.org/uploads/item/ca00420103caaf6c8d78bf31bacffc9a5979c873.pdf">Ver
-                                                Reglamento</a>
-                                        </li>
-                                        <li><a href="https://ascun.org.co">Noticias</a></li>
-                                    </ul>
-                                </li>
-                        </nav>
-                        
-                        <div class="searchbox">  
-                            <form>   
-                            <input type="text" placeholder=" Search...." name="search" id="search" required>   
-                            <button type="submit">Submit</button>   
-                            </form>  
-                            </div class="menu">     
-                                <ul>
-                                    <li><a href="Index.html">SALIR <i class="fasfa-chevron-down fa-1x"></i></a>
                                     </li>
-                                    
+                                    <li><a href="#">Otros <i class="fas
+                                                             fa-chevron-down fa-1x"></i></a>
+                                        <ul>
+                                            <li><a href="./Reglamento.html">Ver Reglamento</a></li>
+                                            <li><a href="./main_administrador.jsp#noticias">Noticias</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
-                            </li>
-                       
-                    </nav>
 
-                    </nav>
+                            </nav>
+                            <nav class="menu-link">
+                                <section class="barra_buscar">
+                                    <form action="./crud/consultar.jsp" method="post" id="search">		    
+                                        <input type="search" id="consulta" name="consulta" placeholder="Buscar equipo..." >		    	
+                                        <button class="fa fa-search" aria-hidden="true"></button>
+                                    </form>
+                                </section>
+                                <a href="./cerrar.jsp">Salir</a>
+                            </nav>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <hr>
+            <section>
+                <div class="container section">
 
                 </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var elems = document.querySelectorAll('.slider');
+                        var instances = M.Slider.init(elems, {interval: 8000});
 
+                        var elems = document.querySelectorAll('.materiaboxed');
+                        var instances = M.Materialbox.init(elems);
+                    });
+                </script>
+            </section>
+            <section id="Tratamiento-Datos">
 
-            </div>
+                <h3 class="centrar-texto">ChampionsProject S.A.S.</h3><br>
+                <h4 class="centrar-texto">Términos y Condiciones de Uso</h4>
+                <div class="intro">
+                    <h5 class="intro">El portal www.championsProject.com.co (en adelante, el “Portal”) es de propiedad de
+                        ChampionsProject S.A.S., (en adelante, “ChampionsProject S.A.S”).
+                        El acceso, participación y uso del Portal es gratuito y está regido por los términos y condiciones
+                        que se incluyen a continuación, los cuales se entienden conocidos y aceptados por los usuarios del
+                        Portal (en adelante, el “Usuario”):</h5>
+                </div>
 
-        </div>
+                <div class="icono">
+                    <h5>1. Propiedad del contenido del Portal – Copyright</h5>
+                    Esta página de Internet y su contenido son de propiedad de ChampionsProject S.A.S. Está prohibida su
+                    reproducción total o parcial, su traducción, inclusión, transmisión, almacenamiento o acceso a través de
+                    medios analógicos, digitales o de cualquier otro sistema o tecnología creada o por crearse, sin
+                    autorización previa y escrita de ChampionsProject S.A.S.
+                    No obstante, es posible descargar material de www.championsProject.com.co para uso personal y no
+                    comercial, siempre y cuando se haga expresa mención de la propiedad en cabeza de ChampionsProject S.A.S.
+                    Los links a otras páginas de Internet, distintas de aquellas de las cuales ChampionsProject S.A.S. es
+                    propietario, son ofrecidas como un servicio a los lectores. ChampionsProject S.A.S. no estuvo
+                    involucrada en su producción y por lo tanto no es responsable por su contenido.
+                    El Usuario es titular de los derechos de autor sobre su contenido. El Usuario concede a ChampionsProject
+                    S.A.S. en forma permanente, una licencia de uso gratuita, no exclusiva, para la reproducción,
+                    adaptación, compilación, almacenamiento y distribución de los contenidos por él suministrados a través
+                    de esta página de Internet. ChampionsProject S.A.S. reconocerá al Usuario su autoría sobre los
+                    contenidos suministrados. ChampionsProject S.A.S. podrá sublicenciar a sus filiales y subsidiarias los
+                    mismos contenidos. El Usuario garantiza que los contenidos suministrados son de su autoría, que no está
+                    violando derechos de autor de terceras personas y que mantendrá indemne a ChampionsProject S.A.S. y a
+                    sus sublicenciatarios frente a cualquier reclamación que se presente con ocasión de su uso.
 
+                    <h5>2. Privacidad</h5>
+                    Es interés de ChampionsProject S.A.S. la protección de la privacidad de la información personal del
+                    Usuario obtenida a través del Portal, comprometiéndose a adoptar una política de confidencialidad según
+                    lo que se establece más adelante.
+                    Se entiende por información personal aquella suministrada por el Usuario para el registro, la cual
+                    incluye datos tales como: nombre, identificación, edad, género, dirección, correo electrónico y
+                    teléfono.
+                    El Usuario reconoce que el ingreso de información personal, lo realiza de manera voluntaria y teniendo
+                    en cuenta las características del Portal y las facultades de uso por parte de ChampionsProject S.A.S., y
+                    en el entendido que tal información hará parte de un archivo y/o base de datos que contenderá su perfil,
+                    la cual podrá ser usado por ChampionsProject S.A.S. en los términos aquí establecidos. El Usuario podrá
+                    modificar o actualizar la información suministrada en cualquier momento. ChampionsProject S.A.S.
+                    aconseja que el Usuario mantenga actualizada la información para optimizar el beneficio que puede
+                    recibir del Portal.
+                    La información personal proporcionada por el Usuario, está asegurada por una clave de acceso a la cual
+                    sólo el Usuario podrá acceder y que sólo él conoce. El Usuario es el único responsable de mantener en
+                    secreto, dicha clave y la información incluida. ChampionsProject S.A.S. se compromete a no intentar
+                    tener acceso ni pretender conocer dicha clave. Debido a que ninguna transmisión por Internet es
+                    absolutamente segura ni puede garantizarse dicho extremo, el Usuario asume el hipotético riesgo que ello
+                    implica, el cual acepta y conoce.
+                    El Usuario podrá solicitar que su información personal no sea entregada por ChampionsProject S.A.S. a
+                    sus filiales y/o subsidiarias, y/o a terceros, a través del envío de correo electrónico a
+                    champions.project21@gmail.com en cuyo caso ChampionsProject S.A.S. no entregará dicha información salvo
+                    en caso que la misma sea requerida por orden judicial o para proteger los derechos de propiedad o
+                    cualquier otro derecho o garantía de ChampionsProject S.A.S.
+                    ChampionsProject S.A.S. no se responsabiliza por cualquier consecuencia derivada del ingreso indebido de
+                    terceros a la base de datos y/o por alguna falla técnica en el funcionamiento y/ o conservación de datos
+                    en el sistema en cualquiera de los capítulos del Portal.
+                    ChampionsProject S.A.S. no garantiza que terceros no autorizados no puedan tener conocimiento de la
+                    clase, condiciones, características y circunstancias del uso que los Usuarios hacen del Portal.
 
-    </header>
-    <main>
-        <hr>
-        <section>
-            <div class="container section">
+                    <h5>3. Bases de Datos e información</h5>
+                    Quien diligencia el formulario de registro autoriza de modo expreso a ChampionsProject S.A.S. y sus
+                    filiales o subsidiarias para recolectar, procesar y comercializar los datos contenidos en el mismo. Con
+                    base en lo anterior ChampionsProject S.A.S., sus filiales o subsidiarias podrán reproducir, publicar,
+                    traducir, adaptar, extraer o compendiar los datos o información suministrada. Del mismo modo le confiere
+                    la facultad para disponer de ellos a título oneroso o gratuito bajo las condiciones lícitas que su libre
+                    criterio dicte. A su vez, quien diligencia el formulario de registro declara que conoce y acepta que los
+                    datos contenidos en el mismo pueden ser utilizados para impulsar, dirigir, ejecutar y de manera general,
+                    llevar a cabo campañas promocionales o concursos de carácter comercial o publicitario, de
+                    ChampionsProject S.A.S. y sus filiales o subsidiarias o de otras personas o sociedades con quien esta
+                    contrate tales actividades, mediante el envío de Email, Mensaje de texto (SMS y/o MMS) o a través de
+                    cualquier medio análogo y/o digital de comunicación.
+                    En todo caso, el Usuario podrá en cualquier momento solicitar el retiro de su información personal de
+                    las bases de datos de ChampionsProject S.A.S., sus filiales o subsidiarias, para lo cual deberá enviar
+                    un e – mail a champions.project21@gmail.com en cuyo caso perderá los privilegios derivados del registro.
+                    Así mismo, el Usuario podrá modificar o actualizar la información suministrada en cualquier momento,
+                    ingresando a la Zona de Usuario en el Portal.
 
-            </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                    var elems = document.querySelectorAll('.slider');
-                    var instances = M.Slider.init(elems, { interval: 8000 });
+                    <h5>4. Contenidos de los Usuarios</h5>
+                    Teniendo en cuenta la posibilidad del Usuario de incluir en el Portal fotos y/ o imágenes y/o textos y/u
+                    otro tipo de material de titularidad del Usuario o bien por éste de titularidad de un tercero, se deja
+                    expresamente establecido que al incluirlo en el Portal se considerará que el Usuario autoriza a
+                    ChampionsProject S.A.S. para que ese material aparezca y quede en el Portal sin derecho a
+                    contraprestación alguna por parte de ChampionsProject S.A.S. En el caso de incluirlo, el Usuario lo
+                    podrá mantener en el Portal por el lapso que considere pertinente. En relación con cualquier tipo de
+                    material y/o información remitida al Portal por los Usuarios, incluyendo fotos y/o imágenes y/o textos
+                    y/u otro tipo de material de propiedad de los Usuarios o de un tercero que los hubieren facultado, se
+                    considerará que el Usuario es titular de los derechos de autor sobre dicho contenido y que al haber sido
+                    incluidos en el Portal el Usuario otorga licencia gratuita, incondicional y no exclusiva de uso de tal
+                    contenido a favor de ChampionsProject S.A.S., sin derecho a percibir contraprestación, remuneración,
+                    retribución o reclamo posterior alguno, cualquiera sea su tipo o índole. ChampionsProject S.A.S. podrá a
+                    su vez hacer cualquier tipo de uso de dicho material, en virtud de la licencia de uso así concedida.
+                    El Usuario reconoce que el ingreso o suministro de contenido de su propiedad o de terceros lo realiza de
+                    manera voluntaria y teniendo en cuenta las características del Portal y las facultades de uso por parte
+                    de ChampionsProject S.A.S.. En todo caso, para el suministro de cualquier tipo de material y/o
+                    información el Usuario deberá observar y tendrán aplicación las Condiciones de Uso y Participación
+                    dentro del portal que se señalan más adelante.
 
-                    var elems = document.querySelectorAll('.materiaboxed');
-                    var instances = M.Materialbox.init(elems);
-                });
-            </script>
-        </section>
-        <section id="noticias">
-            <hr>
-
-            <h2 class="centrar-texto">ChampionsProject S.A.S.</h2><br>
-            <h3 class="centrar-texto">Términos y Condiciones de Uso</h3>
-            <div class="intro">
-            <h5 class="intro">El portal www.championsProject.com.co (en adelante, el “Portal”) es de propiedad de ChampionsProject S.A.S., (en adelante, “ChampionsProject S.A.S”). 
-                El acceso, participación y uso del Portal es gratuito y está regido por los términos y condiciones que se incluyen a continuación, los cuales se entienden conocidos y aceptados por los usuarios del Portal (en adelante, el “Usuario”):</h5>
-            </div>
-
-            <div class="icono">
-                <h5>1. Propiedad del contenido del Portal – Copyright</h5>                                                     
-                    Esta página de Internet y su contenido son de propiedad de ChampionsProject S.A.S. Está prohibida su reproducción total o parcial, su traducción, inclusión, transmisión, almacenamiento o acceso a través de medios analógicos, digitales o de cualquier otro sistema o tecnología creada o por crearse, sin autorización previa y escrita de ChampionsProject S.A.S.
-                    No obstante, es posible descargar material de www.championsProject.com.co para uso personal y no comercial, siempre y cuando se haga expresa mención de la propiedad en cabeza de ChampionsProject S.A.S.
-                    Los links a otras páginas de Internet, distintas de aquellas de las cuales ChampionsProject S.A.S. es propietario, son ofrecidas como un servicio a los lectores. ChampionsProject S.A.S. no estuvo involucrada en su producción y por lo tanto no es responsable por su contenido.
-                    El Usuario es titular de los derechos de autor sobre su contenido. El Usuario concede a ChampionsProject S.A.S. en forma permanente, una licencia de uso gratuita, no exclusiva, para la reproducción, adaptación, compilación, almacenamiento y distribución de los contenidos por él suministrados a través de esta página de Internet. ChampionsProject S.A.S. reconocerá al Usuario su autoría sobre los contenidos suministrados. ChampionsProject S.A.S. podrá sublicenciar a sus filiales y subsidiarias los mismos contenidos. El Usuario garantiza que los contenidos suministrados son de su autoría, que no está violando derechos de autor de terceras personas y que mantendrá indemne a ChampionsProject S.A.S. y a sus sublicenciatarios frente a cualquier reclamación que se presente con ocasión de su uso.
-
-                <h5>2. Privacidad</h5>                                                     
-                    Es interés de ChampionsProject S.A.S. la protección de la privacidad de la información personal del Usuario obtenida a través del Portal, comprometiéndose a adoptar una política de confidencialidad según lo que se establece más adelante.
-                    Se entiende por información personal aquella suministrada por el Usuario para el registro, la cual incluye datos tales como: nombre, identificación, edad, género, dirección, correo electrónico y teléfono.
-                    El Usuario reconoce que el ingreso de información personal, lo realiza de manera voluntaria y teniendo en cuenta las características del Portal y las facultades de uso por parte de ChampionsProject S.A.S., y en el entendido que tal información hará parte de un archivo y/o base de datos que contenderá su perfil, la cual podrá ser usado por ChampionsProject S.A.S. en los términos aquí establecidos. El Usuario podrá modificar o actualizar la información suministrada en cualquier momento. ChampionsProject S.A.S. aconseja que el Usuario mantenga actualizada la información para optimizar el beneficio que puede recibir del Portal.
-                    La información personal proporcionada por el Usuario, está asegurada por una clave de acceso a la cual sólo el Usuario podrá acceder y que sólo él conoce. El Usuario es el único responsable de mantener en secreto, dicha clave y la información incluida. ChampionsProject S.A.S. se compromete a no intentar tener acceso ni pretender conocer dicha clave. Debido a que ninguna transmisión por Internet es absolutamente segura ni puede garantizarse dicho extremo, el Usuario asume el hipotético riesgo que ello implica, el cual acepta y conoce.
-                    El Usuario podrá solicitar que su información personal no sea entregada por ChampionsProject S.A.S. a sus filiales y/o subsidiarias, y/o a terceros, a través del envío de correo electrónico a champions.project21@gmail.com en cuyo caso ChampionsProject S.A.S. no entregará dicha información salvo en caso que la misma sea requerida por orden judicial o para proteger los derechos de propiedad o cualquier otro derecho o garantía de ChampionsProject S.A.S.
-                    ChampionsProject S.A.S. no se responsabiliza por cualquier consecuencia derivada del ingreso indebido de terceros a la base de datos y/o por alguna falla técnica en el funcionamiento y/ o conservación de datos en el sistema en cualquiera de los capítulos del Portal.
-                    ChampionsProject S.A.S. no garantiza que terceros no autorizados no puedan tener conocimiento de la clase, condiciones, características y circunstancias del uso que los Usuarios hacen del Portal.
-
-                <h5>3. Bases de Datos e información</h5>
-                    Quien diligencia el formulario de registro autoriza de modo expreso a ChampionsProject S.A.S. y sus filiales o subsidiarias para recolectar, procesar y comercializar los datos contenidos en el mismo. Con base en lo anterior ChampionsProject S.A.S., sus filiales o subsidiarias podrán reproducir, publicar, traducir, adaptar, extraer o compendiar los datos o información suministrada. Del mismo modo le confiere la facultad para disponer de ellos a título oneroso o gratuito bajo las condiciones lícitas que su libre criterio dicte. A su vez, quien diligencia el formulario de registro declara que conoce y acepta que los datos contenidos en el mismo pueden ser utilizados para impulsar, dirigir, ejecutar y de manera general, llevar a cabo campañas promocionales o concursos de carácter comercial o publicitario, de ChampionsProject S.A.S. y sus filiales o subsidiarias o de otras personas o sociedades con quien esta contrate tales actividades, mediante el envío de Email, Mensaje de texto (SMS y/o MMS) o a través de cualquier medio análogo y/o digital de comunicación.
-                    En todo caso, el Usuario podrá en cualquier momento solicitar el retiro de su información personal de las bases de datos de ChampionsProject S.A.S., sus filiales o subsidiarias, para lo cual deberá enviar un e – mail a champions.project21@gmail.com  en cuyo caso perderá los privilegios derivados del registro. Así mismo, el Usuario podrá modificar o actualizar la información suministrada en cualquier momento, ingresando a la Zona de Usuario en el Portal.
-
-                <h5>4. Contenidos de los Usuarios</h5>
-                    Teniendo en cuenta la posibilidad del Usuario de incluir en el Portal fotos y/ o imágenes y/o textos y/u otro tipo de material de titularidad del Usuario o bien por éste de titularidad de un tercero, se deja expresamente establecido que al incluirlo en el Portal se considerará que el Usuario autoriza a ChampionsProject S.A.S. para que ese material aparezca y quede en el Portal sin derecho a contraprestación alguna por parte de ChampionsProject S.A.S. En el caso de incluirlo, el Usuario lo podrá mantener en el Portal por el lapso que considere pertinente. En relación con cualquier tipo de material y/o información remitida al Portal por los Usuarios, incluyendo fotos y/o imágenes y/o textos y/u otro tipo de material de propiedad de los Usuarios o de un tercero que los hubieren facultado, se considerará que el Usuario es titular de los derechos de autor sobre dicho contenido y que al haber sido incluidos en el Portal el Usuario otorga licencia gratuita, incondicional y no exclusiva de uso de tal contenido a favor de ChampionsProject S.A.S., sin derecho a percibir contraprestación, remuneración, retribución o reclamo posterior alguno, cualquiera sea su tipo o índole. ChampionsProject S.A.S. podrá a su vez hacer cualquier tipo de uso de dicho material, en virtud de la licencia de uso así concedida.
-                    El Usuario reconoce que el ingreso o suministro de contenido de su propiedad o de terceros lo realiza de manera voluntaria y teniendo en cuenta las características del Portal y las facultades de uso por parte de ChampionsProject S.A.S.. En todo caso, para el suministro de cualquier tipo de material y/o información el Usuario deberá observar y tendrán aplicación las Condiciones de Uso y Participación dentro del portal que se señalan más adelante.
-
-                <h5>5. Condiciones de Uso</h5>
-                    A. Por el hecho de ingresar al Portal y para garantizar el buen y adecuado uso del mismo, el Usuario reconoce en cabeza de ChampionsProject S.A.S.:
-                    - El derecho de modificar en cualquier tiempo y por cualquier razón sin previo aviso los Términos y Condiciones del Portal.
+                    <h5>5. Condiciones de Uso</h5>
+                    A. Por el hecho de ingresar al Portal y para garantizar el buen y adecuado uso del mismo, el Usuario
+                    reconoce en cabeza de ChampionsProject S.A.S.:
+                    - El derecho de modificar en cualquier tiempo y por cualquier razón sin previo aviso los Términos y
+                    Condiciones del Portal.
                     - El derecho de negar el registro a cualquier persona, en cualquier momento y por cualquier razón.
-                    - El derecho de incluir o no en el Portal el material recibido de los usuarios a su criterio. En el caso de incluirlo, podrá mantener en el Portal dicho material por el lapso que considere pertinente o modificarlo.
-                    - Remover, sin que sea obligatorio, contenidos que a juicio de ChampionsProject S.A.S. sean ilegales, ofensivos, difamatorios o que de cualquier otra forma violen éstos Términos y Condiciones. Así mismo, podrán ser retirados los contenidos que violen derechos intelectuales, ya sean de ChampionsProject S.A.S. o de un tercero, a solicitud de éste. 
-                    - Utilizar la información personal y/o contenidos suministrados por los Usuarios de acuerdo con los Términos y Condiciones del Portal.
-                    B. El Portal, contiene links que remiten a otras páginas de internet. Teniendo en cuenta que ChampionsProject S.A.S. no es responsable por la disponibilidad de dichos sitios, el Usuario deberá dirigirse directamente al administrador de dicho sitio y usar dichos sitios de acuerdo con los términos de uso respectivos.
-                    C. El registro al Portal podrá darse por terminado por el Usuario en cualquier momento enviando un e-mail a contactenos@championsproject.com
-                    D. El Usuario deberá cumplir los Términos y Condiciones del Portal, así como toda condición adicional que se establezca en el Portal.
-                    E. ChampionsProject S.A.S.  no garantiza la disponibilidad y continuidad del funcionamiento del Portal. Cuando ello sea razonablemente posible, ChampionsProject S.A.S. advertirá previamente las interrupciones en el funcionamiento del Portal. ChampionsProject S.A.S.  tampoco garantiza la utilidad del Portal para la realización de ninguna actividad en particular, ni su infalibilidad y, en particular, aunque no de modo exclusivo, que los Usuarios puedan efectivamente utilizar el Portal, acceder a las distintas páginas web o secciones que forman el Portal.
-                    F. ChampionsProject S.A.S.  excluye cualquier responsabilidad por los daños y perjuicios de toda naturaleza que puedan deberse a la falta de disponibilidad o de continuidad del funcionamiento del Portal, a la defraudación de la utilidad que los Usuarios hubieren podido atribuir al Portal y a los servicios, a la falibilidad del Portal, y en particular, aunque no de modo exclusivo, a las fallas en el acceso a las distintas páginas web o secciones del Portal.
-                    G. ChampionsProject S.A.S. no controla ni garantiza, y por lo tanto no se hace responsable por, la ausencia de virus ni de otros elementos en los contenidos del Portal que puedan producir alteraciones en el sistema informático (software y hardware) del Usuario o en los documentos electrónicos y ficheros almacenados en el sistema informático del Usuario.
-                    H. Es interés de ChampionsProject S.A.S. ser una fuente de información con contenido de actualidad y de interés para los Usuarios. No obstante, ChampionsProject S.A.S. no puede garantizar que dicho contenido esté exento de errores o imprecisiones, en cuyo caso podrán solicitarse las aclaraciones o correcciones que sean del caso. ChampionsProject S.A.S. tampoco puede garantizar que el contenido del Portal sea suficiente y/o útil para el Usuario.
-                    I. ChampionsProject S.A.S. no garantiza y por lo tanto no es responsable de, la licitud, fiabilidad, exactitud, exhaustividad, actualidad y utilidad de las columnas de opinión, y/o las opiniones o contenidos de los Usuarios incluidos en el Portal.
-                    J. Estos Términos y Condiciones han sido dispuestos de conformidad con las leyes colombianas. Cualquier acción o reclamación deberá hacerse ante los Tribunales de Colombia.
-                
-                <h5>6. Registro y Participación del Usuario</h5>
-                    Por el hecho de ingresar al Portal y para garantizar el buen y adecuado uso del mismo, el Usuario deberá cumplir con lo siguiente:
-                    - Observar el Código de Ética, los Términos y Condiciones y cualquier otra condición establecida en este Portal.
-                    - Ser responsable por cualquier actividad que se lleve a cabo bajo su registro. 
+                    - El derecho de incluir o no en el Portal el material recibido de los usuarios a su criterio. En el caso
+                    de incluirlo, podrá mantener en el Portal dicho material por el lapso que considere pertinente o
+                    modificarlo.
+                    - Remover, sin que sea obligatorio, contenidos que a juicio de ChampionsProject S.A.S. sean ilegales,
+                    ofensivos, difamatorios o que de cualquier otra forma violen éstos Términos y Condiciones. Así mismo,
+                    podrán ser retirados los contenidos que violen derechos intelectuales, ya sean de ChampionsProject
+                    S.A.S. o de un tercero, a solicitud de éste.
+                    - Utilizar la información personal y/o contenidos suministrados por los Usuarios de acuerdo con los
+                    Términos y Condiciones del Portal.
+                    B. El Portal, contiene links que remiten a otras páginas de internet. Teniendo en cuenta que
+                    ChampionsProject S.A.S. no es responsable por la disponibilidad de dichos sitios, el Usuario deberá
+                    dirigirse directamente al administrador de dicho sitio y usar dichos sitios de acuerdo con los términos
+                    de uso respectivos.
+                    C. El registro al Portal podrá darse por terminado por el Usuario en cualquier momento enviando un
+                    e-mail a contactenos@championsproject.com
+                    D. El Usuario deberá cumplir los Términos y Condiciones del Portal, así como toda condición adicional
+                    que se establezca en el Portal.
+                    E. ChampionsProject S.A.S. no garantiza la disponibilidad y continuidad del funcionamiento del Portal.
+                    Cuando ello sea razonablemente posible, ChampionsProject S.A.S. advertirá previamente las interrupciones
+                    en el funcionamiento del Portal. ChampionsProject S.A.S. tampoco garantiza la utilidad del Portal para
+                    la realización de ninguna actividad en particular, ni su infalibilidad y, en particular, aunque no de
+                    modo exclusivo, que los Usuarios puedan efectivamente utilizar el Portal, acceder a las distintas
+                    páginas web o secciones que forman el Portal.
+                    F. ChampionsProject S.A.S. excluye cualquier responsabilidad por los daños y perjuicios de toda
+                    naturaleza que puedan deberse a la falta de disponibilidad o de continuidad del funcionamiento del
+                    Portal, a la defraudación de la utilidad que los Usuarios hubieren podido atribuir al Portal y a los
+                    servicios, a la falibilidad del Portal, y en particular, aunque no de modo exclusivo, a las fallas en el
+                    acceso a las distintas páginas web o secciones del Portal.
+                    G. ChampionsProject S.A.S. no controla ni garantiza, y por lo tanto no se hace responsable por, la
+                    ausencia de virus ni de otros elementos en los contenidos del Portal que puedan producir alteraciones en
+                    el sistema informático (software y hardware) del Usuario o en los documentos electrónicos y ficheros
+                    almacenados en el sistema informático del Usuario.
+                    H. Es interés de ChampionsProject S.A.S. ser una fuente de información con contenido de actualidad y de
+                    interés para los Usuarios. No obstante, ChampionsProject S.A.S. no puede garantizar que dicho contenido
+                    esté exento de errores o imprecisiones, en cuyo caso podrán solicitarse las aclaraciones o correcciones
+                    que sean del caso. ChampionsProject S.A.S. tampoco puede garantizar que el contenido del Portal sea
+                    suficiente y/o útil para el Usuario.
+                    I. ChampionsProject S.A.S. no garantiza y por lo tanto no es responsable de, la licitud, fiabilidad,
+                    exactitud, exhaustividad, actualidad y utilidad de las columnas de opinión, y/o las opiniones o
+                    contenidos de los Usuarios incluidos en el Portal.
+                    J. Estos Términos y Condiciones han sido dispuestos de conformidad con las leyes colombianas. Cualquier
+                    acción o reclamación deberá hacerse ante los Tribunales de Colombia.
+
+                    <h5>6. Registro y Participación del Usuario</h5>
+                    Por el hecho de ingresar al Portal y para garantizar el buen y adecuado uso del mismo, el Usuario deberá
+                    cumplir con lo siguiente:
+                    - Observar el Código de Ética, los Términos y Condiciones y cualquier otra condición establecida en este
+                    Portal.
+                    - Ser responsable por cualquier actividad que se lleve a cabo bajo su registro.
                     - Ser responsable de la seguridad de su contraseña.
-                    - No abusar, acosar, amenazar o intimidar a otros usuarios del Portal ya sea a través de los chats, foros, blogs o cualquier otro espacio de participación. 
-                    - No usar ésta página como medio para desarrollar actividades ilegales o no autorizadas tanto en Colombia, como en cualquier otro país. 
-                    - Ser el único responsable por su conducta y por el contenido de textos, gráficos, fotos, videos o cualquier otro tipo de información de la cual haga uso o incluya en el Portal.
-                    - Utilizar el Portal única y exclusivamente para uso personal. Cualquier uso para beneficio corporativo o colectivo está prohibido. 
-                    - Abstenerse de enviar correo electrónico no deseado (SPAM) a otros Usuarios de esta página, así como también le está prohibido transmitir virus o cualquier código de naturaleza destructiva. 
-                    - Canalizar sus quejas, reclamos, denuncias y comentarios a través del correo champions.project21@gmail.com 
-                    Mientras en el Portal estén prohibidas estas conductas, ChampionsProject S.A.S. no será responsable por su cumplimiento y el Usuario lo mantendrá indemne por todo concepto.
+                    - No abusar, acosar, amenazar o intimidar a otros usuarios del Portal ya sea a través de los chats,
+                    foros, blogs o cualquier otro espacio de participación.
+                    - No usar ésta página como medio para desarrollar actividades ilegales o no autorizadas tanto en
+                    Colombia, como en cualquier otro país.
+                    - Ser el único responsable por su conducta y por el contenido de textos, gráficos, fotos, videos o
+                    cualquier otro tipo de información de la cual haga uso o incluya en el Portal.
+                    - Utilizar el Portal única y exclusivamente para uso personal. Cualquier uso para beneficio corporativo
+                    o colectivo está prohibido.
+                    - Abstenerse de enviar correo electrónico no deseado (SPAM) a otros Usuarios de esta página, así como
+                    también le está prohibido transmitir virus o cualquier código de naturaleza destructiva.
+                    - Canalizar sus quejas, reclamos, denuncias y comentarios a través del correo
+                    champions.project21@gmail.com
+                    Mientras en el Portal estén prohibidas estas conductas, ChampionsProject S.A.S. no será responsable por
+                    su cumplimiento y el Usuario lo mantendrá indemne por todo concepto.
 
-                <h5>7. Promociones, concursos y eventos</h5>
-                    Las promociones, concursos, sorteos y eventos que se implementen en el Portal estarán sujetas a las reglas y condiciones que en cada oportunidad se establezca por parte de ChampionsProject S.A.S., siendo necesario como requisito mínimo para acceder a tales oportunidades o beneficios comerciales, que el Usuario se encuentre debidamente registrado como usuario del Portal. ChampionsProject S.A.S. no se responsabiliza por cualquier tipo de daño –incluyendo moral, físico, material, ni de cualquier otra índole- que pudiera invocarse como relacionado con la recepción por parte del Usuario registrado de cualquier tipo de obsequios y/o regalos remitidos por ChampionsProject S.A.S.. Así mismo, ChampionsProject S.A.S. no será responsable por las consecuencias que pudiere causar el ingreso al Portal y/o la presencia en cualquier evento y/o reunión organizada por éste.   El Usuario reconoce que ChampionsProject S.A.S. no asume responsabilidad alguna que corresponda a un anunciante y/o el proveedor de los servicios que se ofrezcan en el Portal, siendo entendido que ChampionsProject S.A.S. no se responsabiliza por la calidad ni la entrega de los productos o prestación de servicios que se publican en este sitio. Por tal motivo no será responsable por cualquier problema, queja o reclamo de los usuarios por cuestiones atinentes a dichos productos y/o servicios.
-                    Cada promoción, concurso o evento que se promueva o realice a través del Portal, estará sujeto a las reglas de Privacidad que para el mismo se indiquen, por lo que la participación en los mismos deberá atenerse a lo que en cada caso se señale, lo cual será complementario a las políticas de privacidad señaladas anteriormente, siempre y que no sea excluyente.
+                    <h5>7. Promociones, concursos y eventos</h5>
+                    Las promociones, concursos, sorteos y eventos que se implementen en el Portal estarán sujetas a las
+                    reglas y condiciones que en cada oportunidad se establezca por parte de ChampionsProject S.A.S., siendo
+                    necesario como requisito mínimo para acceder a tales oportunidades o beneficios comerciales, que el
+                    Usuario se encuentre debidamente registrado como usuario del Portal. ChampionsProject S.A.S. no se
+                    responsabiliza por cualquier tipo de daño –incluyendo moral, físico, material, ni de cualquier otra
+                    índole- que pudiera invocarse como relacionado con la recepción por parte del Usuario registrado de
+                    cualquier tipo de obsequios y/o regalos remitidos por ChampionsProject S.A.S.. Así mismo,
+                    ChampionsProject S.A.S. no será responsable por las consecuencias que pudiere causar el ingreso al
+                    Portal y/o la presencia en cualquier evento y/o reunión organizada por éste. El Usuario reconoce que
+                    ChampionsProject S.A.S. no asume responsabilidad alguna que corresponda a un anunciante y/o el proveedor
+                    de los servicios que se ofrezcan en el Portal, siendo entendido que ChampionsProject S.A.S. no se
+                    responsabiliza por la calidad ni la entrega de los productos o prestación de servicios que se publican
+                    en este sitio. Por tal motivo no será responsable por cualquier problema, queja o reclamo de los
+                    usuarios por cuestiones atinentes a dichos productos y/o servicios.
+                    Cada promoción, concurso o evento que se promueva o realice a través del Portal, estará sujeto a las
+                    reglas de Privacidad que para el mismo se indiquen, por lo que la participación en los mismos deberá
+                    atenerse a lo que en cada caso se señale, lo cual será complementario a las políticas de privacidad
+                    señaladas anteriormente, siempre y que no sea excluyente.
 
-                <h5>8. Foros, Blogs, Chats, Comentarios y otros espacios de participación</h5>
-                    El Usuario reconoce que su participación en cualquier foro, chat, comentario, blog y/o cualquier otro espacio de participación del Portal, será bajo su exclusiva responsabilidad, por lo cual deberá ser mayor de edad, y que de igual forma, las opiniones y/o acciones y/o comportamiento de otros Usuarios en tales espacios son responsabilidad exclusiva de quienes las emiten o realizan, por lo cual ChampionsProject S.A.S. no se hace responsable ni garantiza la calidad o idoneidad de tales conductas u opiniones, ni por las consecuencias que ellas pudieren acarrear a favor y/ o en contra de otros Usuarios o de terceros. Particularmente los usuarios deberán tener en cuenta las recomendaciones que se incluyan en el Portal encaminadas a propiciar una adecuada convivencia y participación en tales espacios de participación.
-                    El diseño, manejo, finalidad y características de los diferentes espacios de participación del Portal es discrecional de ChampionsProject S.A.S., quien podrá en cualquier momento cambiarlos y/o eliminarlos, y/o determinar la cantidad de participantes admitidos en cada uno de ellos.<br> 
+                    <h5>8. Foros, Blogs, Chats, Comentarios y otros espacios de participación</h5>
+                    El Usuario reconoce que su participación en cualquier foro, chat, comentario, blog y/o cualquier otro
+                    espacio de participación del Portal, será bajo su exclusiva responsabilidad, por lo cual deberá ser
+                    mayor de edad, y que de igual forma, las opiniones y/o acciones y/o comportamiento de otros Usuarios en
+                    tales espacios son responsabilidad exclusiva de quienes las emiten o realizan, por lo cual
+                    ChampionsProject S.A.S. no se hace responsable ni garantiza la calidad o idoneidad de tales conductas u
+                    opiniones, ni por las consecuencias que ellas pudieren acarrear a favor y/ o en contra de otros Usuarios
+                    o de terceros. Particularmente los usuarios deberán tener en cuenta las recomendaciones que se incluyan
+                    en el Portal encaminadas a propiciar una adecuada convivencia y participación en tales espacios de
+                    participación.
+                    El diseño, manejo, finalidad y características de los diferentes espacios de participación del Portal es
+                    discrecional de ChampionsProject S.A.S., quien podrá en cualquier momento cambiarlos y/o eliminarlos,
+                    y/o determinar la cantidad de participantes admitidos en cada uno de ellos.<br>
                     Proyectó: Oficina Jurídica de ChampionsProject S.A.S.
-                
-                
-                
-                
-                
 
-                
+                </div>
+                </div>
+
+            </section>
+            <section id="universidades">
+                <hr>
+                <div class="contenedor logos-universidades">
+                    <section class="participantes">
+                        <div class="grupo">
+                            <h2>GRUPO A</h2>
+                            <img src="fotos/logosUni/ean.png" alt="EAN">
+                            <img src="fotos/logosUni/uniminuto.jpg" alt="UNIMINUTO">
+                            <img src="fotos/logosUni/unad.jpg" alt="UNAD">
+                            <img src="fotos/logosUni/ufps.png" alt="UFPS">
+                        </div>
+
+                        <div class="grupo">
+                            <h2>GRUPO B</h2>
+
+                            <img src="fotos/logosUni/ucooperativa.jpg" alt="ucooperativa">
+                            <img src="fotos/logosUni/udi.png" alt="UDI">
+                            <img src="fotos/logosUni/uts.png" alt="UTS">
+                            <img src="fotos/logosUni/unipamplona.png" alt="UNAP">
+                        </div>
+
+                        <div class="grupo">
+                            <h2>GRUPO C</h2>
+                            <img src="fotos/logosUni/santoto.jpg" alt="SANTOTO">
+                            <img src="fotos/logosUni/simonBolivar.png" alt="USB">
+                            <img src="fotos/logosUni/udes.jpg" alt="UDES">
+                            <img src="fotos/logosUni/uis.png" alt="UIS">
+                        </div>
+
+                        <div class="grupo">
+                            <h2>GRUPO D</h2>
+                            <img src="fotos/logosUni/esap.png" alt="ESAP">
+                            <img src="fotos/logosUni/mbeltran.jpg" alt="mbeltran">
+                            <img src="fotos/logosUni/pontificia.jpg" alt="pontificia">
+                            <img src="fotos/logosUni/logoUnab.jpg" alt="UNAB">
+                        </div>
+
+                    </section>
+                </div>
+
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="division">
+                <div class="imagen-copa">
+                    <img src="./img/logo color en negativo2x.png" alt="">
+                </div>
+                <div class="centro-pie">
+                    <nav class="nav-pie">
+                        <ul>
+                            <li><a href="#">INICIO</a></li>
+                            <li><a href="Nosotros.html">NOSOTROS</a></li>
+                            <li><a href="enviar_contacto.html">CONTACTENOS</a></li>
+                            <li><a href="./main_administrador.jsp#noticias">NOTICIAS</a></li>
+                            <li><a href="busqueda.jsp">RESULTADOS</a></li>
+                            <li><a href="./main_administrador.jsp#universidades">EQUIPOS</a></li>
+                        </ul>
+                    </nav>
+                    <div class="redes">
+                        <a href="https://twitter.com/Championsprojec?s=09" target="_blank" rel="noopener noreferrer"><img src="./img/Logo twiter.png" alt=""></a>
+                        <a href="https://www.facebook.com/championsproject21/" target="_blank" rel="noopener noreferrer"><img src="./img/logo facebook.png" alt=""></a>
+                        <a href="https://www.instagram.com/championsproject5/" target="_blank" rel="noopener noreferrer"><img src="./img/logo instagram.png" alt=""></a>
+                    </div>
+                    <div class="terminos">
+                        <div class="aliniacion-terminos">
+                            <a href="Tratamiento_Datos.html"><h5>PolÍticas de privacidad</h5></a>
+                            <a href="Tratamiento_Datos.html"><h5>Aviso Legal</h5></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-               
-            </div>
-
-        </section>
-        <section id="universidades">
             <hr>
-            <div class="contenedor logos-universidades">
-                <section class="participantes">
-                    <div class="grupo">
-                        <h2>GRUPO A</h2>
-                        <img src="fotos/logosUni/ean.png" alt="EAN">
-                        <img src="fotos/logosUni/uniminuto.jpg" alt="UNIMINUTO">
-                        <img src="fotos/logosUni/unad.jpg" alt="UNAD">
-                        <img src="fotos/logosUni/ufps.png" alt="UFPS">
-                    </div>
-
-                    <div class="grupo">
-                        <h2>GRUPO B</h2>
-
-                        <img src="fotos/logosUni/ucooperativa.jpg" alt="ucooperativa">
-                        <img src="fotos/logosUni/udi.png" alt="UDI">
-                        <img src="fotos/logosUni/uts.png" alt="UTS">
-                        <img src="fotos/logosUni/unipamplona.png" alt="UNAP">
-                    </div>
-
-                    <div class="grupo">
-                        <h2>GRUPO C</h2>
-                        <img src="fotos/logosUni/santoto.jpg" alt="SANTOTO">
-                        <img src="fotos/logosUni/simonBolivar.png" alt="USB">
-                        <img src="fotos/logosUni/udes.jpg" alt="UDES">
-                        <img src="fotos/logosUni/uis.png" alt="UIS">
-                    </div>
-
-                    <div class="grupo">
-                        <h2>GRUPO D</h2>
-                        <img src="fotos/logosUni/esap.png" alt="ESAP">
-                        <img src="fotos/logosUni/mbeltran.jpg" alt="mbeltran">
-                        <img src="fotos/logosUni/pontificia.jpg" alt="pontificia">
-                        <img src="fotos/logosUni/logoUnab.jpg" alt="UNAB">
-                    </div>
-
-                </section>
+            <div class="copyright">
+                <h5>Todos los derechos reservados 2021 ©</h5>
             </div>
-
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="division">
-            <div class="imagen-copa">
-                <img src="./img/logo color en negativo2x.png" alt="">
-            </div>
-            <div class="centro-pie">
-                <nav class="nav-pie">
-                    <ul>
-                        <li><a href="#">INICIO</a></li>
-                        <li><a href="#">NOSOTROS</a></li>
-                        <li><a href="#">CONTACTENOS</a></li>
-                        <li><a href="#noticias">NOTICIAS</a></li>
-                        <li><a href="#">RESULTADOS</a></li>
-                        <li><a href="#universidades">EQUIPOS</a></li>
-                    </ul>
-                </nav>
-                <div class="redes2">
-                    <div class="twitter">
-                        <a href="https://twitter.com/Championsprojec?s=09"><img src="./img/Logo twiter.png" alt="">
-                        </a>
-                    </div>
-                    <div class="facebook">
-                        <a href="https://www.facebook.com/championsproject21/">
-                            <img src="./img/logo facebook.png" alt="">
-                        </a>
-                    </div>
-                    <div class="instagram">
-                        <a href="https://www.instagram.com/invites/contact/?i=10wn4gmm8p9j7&utm_content=mp3ervm"><img
-                                src="./img/logo instagram.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="terminos">
-                    <div class="aliniacion-terminos">
-                        
-                        <li><a href="index.html"><h5>PolÍticas de privacidad</h5></a></li>
-                    
-                        <li><a href="index.html"><h5>Aviso Legal</h5></a></li>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="copyright">
-            <h5>Todos los derechos reservados 2021 ©</h5>
-        </div>
-
-    </footer>
-</body>
+        </footer>
+    </body>
 
 </html>

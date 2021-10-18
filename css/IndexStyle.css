@@ -135,7 +135,24 @@ text-align: center;
 .menu-link a:hover {
     background:var(--colorCabecera);
   }
-
+  #search{
+      background-color:var(--colorRosaT);
+      display: flex;
+      flex-direction: row;
+      margin-top: 0;
+      
+      
+  }
+  #search input{
+    position: relative;
+    background-color: white;
+    text-decoration: none;
+  }
+  .fa-search{
+      background-color:var(--colorRosaT);
+      margin-left: 5px;
+      
+  }
  /**********PARTICIPANTES**********/
 .participantes{
     display: flex;
@@ -264,10 +281,10 @@ border-width: 1px;
 }
 
 .redes2{
-    background-color:--colorRosaT;
+    background-color:var(--colorRosaT);
     display: flex;
     flex-direction: row;
-    justify-content:start
+    justify-content:start;
 }
 .redes2 img{
     max-height: 5rem;

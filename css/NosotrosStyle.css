@@ -135,6 +135,25 @@ text-align: center;
 .menu-link a:hover {
     background:var(--colorCabecera);
   }
+  
+  #search{
+      background-color:var(--colorRosaT);
+      display: flex;
+      flex-direction: row;
+      margin-top: 0;
+      
+      
+  }
+  #search input{
+    position: relative;
+    background-color: white;
+    text-decoration: none;
+  }
+  .fa-search{
+      background-color:var(--colorRosaT);
+      margin-left: 5px;
+      
+  }
 
  /**********PARTICIPANTES**********/
 .participantes{
@@ -184,7 +203,7 @@ margin: 2rem ;
     
     flex-basis: calc(33.3% - 1rem);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: baseline;
     border-style: none;
     margin:5rem ;
@@ -263,6 +282,11 @@ text-align: center;
 border-style:groove;
 border-width: 1px;
 }
+/***Search button***/
+.searchbox form{
+    display: flex;
+    flex-direction: row;
+}
 
 /*****************Pie de Pagina**************/
 .site-footer{
@@ -328,84 +352,117 @@ border-width: 1px;
    
     width:50px;
     }
-
-
-
-
-/************************Contacto*************************/
+.enviar{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        
+    } 
+.enviar{
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+   
+/*********** contacto*********** */
 .contacto h2{
     text-align: center;
     width: 800;
-}
-form{
-    background-color: var(--colorcuadro);
-    padding: 2rem;
-    border-radius: 3rem;
-    margin-top: 3rem;
-}
-form legend{
-    text-align: center;
-    font-size: 2rem;
-    color: var(--oscuro);
-    font-weight: 600;
-    margin: 3rem 0;
-}
-@media (min-width:768px){
-    form{
-        max-width: 800px;
-        margin: 3rem auto;
     }
-    .contenedor-campos{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .campo{
-        flex: 0 0 calc(50% - 1rem);
-    }
-}
-.campo{
-    display: flex;
-    margin-bottom: 2rem;
-}
-.campo label{
+
+label{
     flex: 0 0 90px;
     padding-top: 1.5rem;
     color: var(--colorOscuro);
     font-size: 1.5rem;  ;
 }
-.campo input{
-    flex: 1;
-    height: 4rem;
-    
-}
-.campo textarea{
-    flex: 1;
-    height: 6rem;
-}
 .w-100{
     flex: 0 0 100%;
-}
-.enviar{
-    display: flex;
-    justify-content: flex-end;
-}
-.boton{
-    background-color: var(--colorCabecera);
-    color: var(--colorClaro);
-    font-size: 2rem;
-    padding: 1.5rem;
+    padding: 2.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    border-radius: 1rem;
-
+    border-radius: 2rem;
 }
-/************************>espacio buscar barra de menú************************/
+.w-101 h3{
+    
+    position: inherit;
+    align-items: center;
+    align-content: flex-start;
+}
+#comment{
+    font-family:'Krub', sans-serif;
+    flex: 0 0 100%;
+    height: 20rem;
+    width: 110rem;
+    padding-bottom: 0.5rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction:row;
+    align-items:initial;
+    border-color: var(--colorClaro) ;
+    border-radius: 2rem;
+    border-style: solid;
+    justify-content: space-between;
+    margin: 0 3rem;
+    background-color: #e2eef3b4;
+    border-width: 0.4px;
+    box-shadow: 10px 5px 0px 0px #38685d77;
+    text-decoration:none;
+}
+
+#comment{
+font-size: 1.5rem ;
+    text-align:justify;
+    padding: 1rem;
+}
+#subject{
+    text-align:justify;
+    padding: 1rem;
+    font-size: 2.5rem ;   
+}
+.buttons{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    padding: 1rem; 
+    
+    
+}
+
+.w-101 input{
+    font-family:'Krub', sans-serif;
+    font-size: 1.5rem;
+    margin: 0 3rem;
+    background-color: var(--colorCabecera);
+    color: var(--colorClaro);
+    padding: 3.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 2rem;
+    display: inline-block;
+}
+.w-101 input{
+display: flex;
+    flex-direction:column; 
+    align-items:flex-start;
+    justify-content:space-evenly;
+}
+.Correo{
+    background-image: url("../img/balon2.png");
+    background-repeat: no-repeat;
+    background-size:inherit ;
+    background-size: 100%;
+}
+
+
+/*
+/************************Contacto*************************
+
 
 
 
 .aliniacion-terminos .a{
     text-decoration: none;
     
-}
+}*/
 

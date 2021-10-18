@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Krub">
+        <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet"
+              integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+        <!--<link rel="stylesheet" type="text/css" href="css/normalize.css">-->
+        <link rel="stylesheet" type="text/css" href="css/NosotrosStyle.css">
+        <link rel="stylesheet" type="text/css" href="css/IndexStyle.css">
+        <title>Correo</title>
+        <script>
+
+            // ===================================
+
+            window.onerror = new Function("return true");
+
+            function sendMail() {
+
+                var link = "champions.project21@gmail.com"
+
+                        + "?cc=champions.project21@gmail.com"
+
+                        + "&subject=" + escape(document.getElementById('subject').value)
+
+                        + "&body=" + escape(document.getElementById('comment').value);
+
+
+
+                window.location.href = "mailto:champions.project21@gmail.com;" + link;
+
+            }
+
+            //]]>
+
+        </script>
+        <!-- Script validation  -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function (sendMail) {
+                document.getElementById("Correo").addEventListener('button', validarCorreo);
+
+            });
+            function validarCorreo(evento) {
+                evento.preventDefault();
+                var subject = document.getElementById('subject').value;
+                if (subject.length == 0) {
+                    alert('Debe poner un asunto de correo');
+                    sendMail;
+                }
+                var comment = document.getElementById('comment').value;
+                if (comment.length < 16) {
+                    alert('Indique el motivo o comentarios de su comunicación');
+                    sendMail;
+                }
+                this.button();
+            }
+
+        </script>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="fondo">
+
+                <div class="barra-titulo">
+                    <div class="logo">
+                        <a href="./main_administrador.jsp"><img src="img/logo color  en positivo horizontal@2x.png"
+                                                                alt="" ></a>
+                    </div>
+                    <div class="letras">
+                        <div class="titulo">
+                            <h1>Torneo Local de Fútbol Inter Universitario</h1>
+                        </div>
+                        <nav class="barra-menu">
+                            <nav class="menu">
+                                <ul>
+                                    <li><a href="#">Partidos <i class="fas fa-chevron-down fa-1x"></i></a>
+                                        <ul>
+                                            <li><a href="./busqueda.jsp">Ver Partidos</a></li>
+                                            <li><a href="./crud/cargueDatos.jsp">Crear Partidos</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Equipos <i class="fas fa-chevron-down fa-1.5x"></i></a>
+                                        <ul>
+
+                                            <li><a href="./main_administrador.jsp#universidades">GRUPO A</a></li>
+
+                                            <li><a href="./main_administrador.jsp#universidades">GRUPO B</a></li>
+
+                                            <li><a href="./main_administrador.jsp#universidades">GRUPO C</a></li>
+
+                                            <li><a href="./main_administrador.jsp#universidades">GRUPO D</a></li>
+
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Otros <i class="fas
+                                                             fa-chevron-down fa-1x"></i></a>
+                                        <ul>
+                                            <li><a href="./Reglamento.html">Ver Reglamento</a></li>
+                                            <li><a href="./main_administrador.jsp#noticias">Noticias</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </nav>
+                            <nav class="menu-link">
+                                <section class="barra_buscar">
+                                    <form action="./crud/consultar.jsp" method="post" id="search">		    
+                                        <input type="search" id="consulta" name="consulta" placeholder="Buscar equipo..." >		    	
+                                        <button class="fa fa-search" aria-hidden="true"></button>
+                                    </form>
+                                </section>
+                                <a href="./cerrar.jsp">Salir</a>
+                            </nav>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <h4 id="Welcome" style="text-align: right;">Bienvenido </h4>
+
+            <section>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.slider');
+                var instances = M.Slider.init(elems, {interval: 8000});
+
+                var elems = document.querySelectorAll('.materiaboxed');
+                var instances = M.Materialbox.init(elems);
+            });
+                </script>
+            </section><hr>
+
+            <section>
+                <form>
+                    <div class="Correo">
+                        <div class="campo w-100">
+                            <b>
+                                <h3 class="centrar-texto">Contáctanos</h3>
+                            </b><br><br>
+                        </div>
+                        <div class="campo w-100">
+                            <label><h4>Asunto:</h4></label><br>
+                        </div>
+                        <br>
+                        <input name="subject" id="subject" type="text" requiered><br><br>
+                        <div class="campo w-100">
+                            <label> <h4>Déjanos tu comentario:</h4></label><br>
+
+                        </div>
+                        <textarea  name="comment" id= "comment" required></textarea><br><br>
+                        <section class= "buttons">
+
+                            <div class="campo w-101" style="width: 7rem;">
+                                <input type="button" value="Borrar" id= "Borrar" onclick="location.reload()">
+                            </div>
+                            <div class="campo w-101" style="width: 7rem;">
+                                <input type="button" value="Enviar" id= "Enviar" onclick="sendMail();
+                                        return false">
+                            </div>
+                        </section>
+                    </div>
+
+                </form>
+
+            </section>
+            <hr>
+            <section id="universidades">
+                <hr>
+                <div class="contenedor logos-universidades">
+                    <section class="participantes">
+                        <div class="grupo">
+                            <h2>GRUPO A</h2>
+                            <img src="fotos/logosUni/ean.png" alt="EAN">
+                            <img src="fotos/logosUni/uniminuto.jpg" alt="UNIMINUTO">
+                            <img src="fotos/logosUni/unad.jpg" alt="UNAD">
+                            <img src="fotos/logosUni/ufps.png" alt="UFPS">
+                        </div>
+
+                        <div class="grupo">
+                            <h2>GRUPO B</h2>
+
+                            <img src="fotos/logosUni/ucooperativa.jpg" alt="ucooperativa">
+                            <img src="fotos/logosUni/udi.png" alt="UDI">
+                            <img src="fotos/logosUni/uts.png" alt="UTS">
+                            <img src="fotos/logosUni/unipamplona.png" alt="UNAP">
+                        </div>
+
+                        <div class="grupo">
+                            <h2>GRUPO C</h2>
+                            <img src="fotos/logosUni/santoto.jpg" alt="SANTOTO">
+                            <img src="fotos/logosUni/simonBolivar.png" alt="USB">
+                            <img src="fotos/logosUni/udes.jpg" alt="UDES">
+                            <img src="fotos/logosUni/uis.png" alt="UIS">
+                        </div>
+
+                        <div class="grupo">
+                            <h2>GRUPO D</h2>
+                            <img src="fotos/logosUni/esap.png" alt="ESAP">
+                            <img src="fotos/logosUni/mbeltran.jpg" alt="mbeltran">
+                            <img src="fotos/logosUni/pontificia.jpg" alt="pontificia">
+                            <img src="fotos/logosUni/logoUnab.jpg" alt="UNAB">
+                        </div>
+
+                    </section>
+                </div>
+            </section>
+
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="division">
+                <div class="imagen-copa">
+                    <img src="./img/logo color en negativo2x.png" alt="">
+                </div>
+                <div class="centro-pie">
+                    <nav class="nav-pie">
+                        <ul>
+                            <li><a href="#">INICIO</a></li>
+                            <li><a href="Nosotros.html">NOSOTROS</a></li>
+                            <li><a href="enviar_contacto.html">CONTACTENOS</a></li>
+                            <li><a href="./main_administrador.jsp#noticias">NOTICIAS</a></li>
+                            <li><a href="busqueda.jsp">RESULTADOS</a></li>
+                            <li><a href="./main_administrador.jsp#universidades">EQUIPOS</a></li>
+                        </ul>
+                    </nav>
+                    <div class="redes">
+                        <a href="https://twitter.com/Championsprojec?s=09" target="_blank" rel="noopener noreferrer"><img src="./img/Logo twiter.png" alt=""></a>
+                        <a href="https://www.facebook.com/championsproject21/" target="_blank" rel="noopener noreferrer"><img src="./img/logo facebook.png" alt=""></a>
+                        <a href="https://www.instagram.com/championsproject5/" target="_blank" rel="noopener noreferrer"><img src="./img/logo instagram.png" alt=""></a>
+                    </div>
+                    <div class="terminos">
+                        <div class="aliniacion-terminos">
+                            <a href="Tratamiento_Datos.html"><h5>PolÍticas de privacidad</h5></a>
+                            <a href="Tratamiento_Datos.html"><h5>Aviso Legal</h5></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <h5>Todos los derechos reservados 2021 ©</h5>
+            </div>
+        </footer>
+    </body>
+
+</html>
