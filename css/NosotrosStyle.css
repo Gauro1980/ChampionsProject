@@ -1,0 +1,468 @@
+
+:root{
+    --colorCabecera: #4a79f0;
+    --colorOscuro: black ;
+    --colorClaro: #ffffff;
+    --colorRosa: #fd6f4c;
+    --colorRosaT: #fd6f4cc7;
+    --colorcuadro: #e1f9fcb9;
+    }
+    @import "compass/css3";
+html{
+      box-sizing:border-box;
+      max-height: 100%;
+      font-size: 62.5%;
+      font-family:'Krub', sans-serif;
+}
+    *, *:before, *:after{
+        box-sizing: inherit;
+}
+.fondo{
+    display: flex;
+    flex-direction: column; 
+    margin-top: 1em;   
+}
+
+.logo img{
+    max-height: 15rem;
+}
+
+.titulo{
+text-align: center;
+}
+.barra-titulo{
+    
+    display: flex;
+    flex-direction: row; 
+    align-items:center;
+    justify-content: space-around;
+   
+}
+.letras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.letras h1{
+    font-size: 3rem;
+    font-weight:600;
+}
+.barra-menu{
+    display: flex;
+    flex-direction: row;
+    width:70vw;
+    justify-content:space-between;
+    z-index: 10;
+}
+.menu{
+   background-color: var(--colorCabecera);
+}
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+.menu ul li {
+    background-color: var(--colorCabecera);
+}
+
+.menu ul a i{
+    display:contents
+}
+.menu ul a {
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  font-weight:400;
+  font-size:2rem;
+  font-family:'Krub', sans-serif;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.menu ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+  }
+
+.menu ul li:hover {
+  background:var(--colorRosa);
+}
+
+.menu ul ul {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+}
+
+.menu ul ul li {
+    float:none;
+    width:150px
+   }
+.menu ul ul a {
+  line-height:120%;
+  padding:10px 15px;
+}
+
+.menu ul li:hover > ul {
+  display:block;
+}
+
+.menu-link{
+    
+    background-color: var(--colorRosa);
+    
+    display:inline-block;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.menu-link a{
+    display:inline-block;
+    background-color: var(--colorRosa);
+    padding:0 2rem;
+    font-weight:400;
+    font-size:2rem;
+    font-family:'Krub', sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    text-decoration:none;
+
+}
+.menu-link a:hover {
+    background:var(--colorCabecera);
+  }
+  
+  #search{
+      background-color:var(--colorRosaT);
+      display: flex;
+      flex-direction: row;
+      margin-top: 0;
+      
+      
+  }
+  #search input{
+    position: relative;
+    background-color: white;
+    text-decoration: none;
+  }
+  .fa-search{
+      background-color:var(--colorRosaT);
+      margin-left: 5px;
+      
+  }
+
+ /**********PARTICIPANTES**********/
+.participantes{
+    display: flex;
+    flex-direction: row;
+    text-align:right;
+    justify-content: space-between;
+    padding: 3rem;
+}
+.participantes div img{
+    max-height: 10rem;
+    margin: 1rem 1rem;
+}
+
+ /************Estilo para las noticias***********/
+#reglamento{
+padding: 2rem;
+
+margin: 2rem ;
+
+}
+ .sesiones-menu.icono{
+    display: flex;
+    flex-direction:row;
+    align-items:initial;
+    justify-content: space-between;
+    margin: 0 3rem;
+
+}
+.icono img{
+    display: flex;
+    justify-content:center;
+    max-height:20rem;
+
+}
+.centrar-texto{
+    display:flex;
+    justify-content: center;
+    font-weight: 600;
+}
+.intro{
+    margin:3rem ; 
+
+}
+
+.icono{
+    
+    flex-basis: calc(33.3% - 1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    border-style: none;
+    margin:5rem ;
+    background-color: #f4f7ff91;
+    text-align:justify;
+    
+}
+.icono p{
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 1rem;
+
+
+}
+.icono h3{
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+.sesiones-menu .perfil {
+    display: flex;
+    flex-direction:row;
+    align-items:initial;
+    border-color: var(--colorClaro) ;
+    border-radius: 2rem;
+    border-style: solid;
+    justify-content: space-between;
+    margin: 0 3rem;
+    background-color: #f4f7ffb4;
+    border-width: 1px;
+    box-shadow: 10px 5px 0px 0px #345a5277;
+}
+.perfil p{
+    font-size: 1.5rem ;
+    text-align:justify;
+    padding: 1rem;
+}
+.perfil h3{
+    text-align:center;
+    padding: 1rem;
+}
+#nosotros{
+    background-image: url("../fotos/canchafutbol.jpg");
+    background-repeat: no-repeat;
+    background-size:inherit ;
+    background-size: 100%;
+}
+
+#nosotros-1 .sesiones-menu{
+    display: flex;
+    flex-direction:row;
+
+}
+#nosotros-2 .sesiones-menu{
+    display: flex;
+    flex-direction:row;
+
+}
+/**********Iconos universidades*/
+.contenedor{
+
+    display: flex;
+    font-size: 2rem;
+    font-family: 'Krub', sans-serif;
+    display: flex;
+    flex-direction:column;
+    align-items:inherit;
+    background-image: url(../img/balon\ malla\ 35%.png);
+    background-position-y:top;
+    background-repeat: no-repeat;   
+}
+
+.grupo{
+text-align: center;
+border-style:groove;
+border-width: 1px;
+}
+/***Search button***/
+.searchbox form{
+    display: flex;
+    flex-direction: row;
+}
+
+/*****************Pie de Pagina**************/
+.site-footer{
+    background-color: var(--colorOscuro);
+    color: var(--colorClaro);
+}
+.division{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.imagen-copa{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+}
+.division img{    
+    max-height: 15rem;
+    padding: 1rem; 
+}
+
+.nav-pie a{
+    font-size: 2rem;
+    background-color: var(--colorOscuro);
+}
+.nav-pie a:hover{
+    background-color: var(--colorRosa);
+}
+.redes img{
+    max-height: 5rem;
+}
+.aliniacion-terminos{
+    display: flex;
+   flex-direction: row;
+   justify-content:start
+}
+.aliniacion-terminos h5{
+    border-right:solid;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    border-width: 1px;
+}
+
+.copyright h5{
+    text-align: center;  
+}
+
+.redes2{
+    background-color:--colorRosaT;
+    display: flex;
+    flex-direction: row;
+    justify-content:start
+}
+.redes2 img{
+    max-height: 5rem;
+}
+.button-holder{
+    background-color:--colorRosaT;
+    /*background-color:rgb(0, 68, 255);*/
+    border-top:thin solid #e5e5e5;
+    box-shadow:1px 1px 1px 1px #e5e5e5;
+    display: flex;
+   
+    width:50px;
+    }
+.enviar{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        
+    } 
+.enviar{
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+   
+/*********** contacto*********** */
+.contacto h2{
+    text-align: center;
+    width: 800;
+    }
+
+label{
+    flex: 0 0 90px;
+    padding-top: 1.5rem;
+    color: var(--colorOscuro);
+    font-size: 1.5rem;  ;
+}
+.w-100{
+    flex: 0 0 100%;
+    padding: 2.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 2rem;
+}
+.w-101 h3{
+    
+    position: inherit;
+    align-items: center;
+    align-content: flex-start;
+}
+#comment{
+    font-family:'Krub', sans-serif;
+    flex: 0 0 100%;
+    height: 20rem;
+    width: 110rem;
+    padding-bottom: 0.5rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction:row;
+    align-items:initial;
+    border-color: var(--colorClaro) ;
+    border-radius: 2rem;
+    border-style: solid;
+    justify-content: space-between;
+    margin: 0 3rem;
+    background-color: #e2eef3b4;
+    border-width: 0.4px;
+    box-shadow: 10px 5px 0px 0px #38685d77;
+    text-decoration:none;
+}
+
+#comment{
+font-size: 1.5rem ;
+    text-align:justify;
+    padding: 1rem;
+}
+#subject{
+    text-align:justify;
+    padding: 1rem;
+    font-size: 2.5rem ;   
+}
+.buttons{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    padding: 1rem; 
+    
+    
+}
+
+.w-101 input{
+    font-family:'Krub', sans-serif;
+    font-size: 1.5rem;
+    margin: 0 3rem;
+    background-color: var(--colorCabecera);
+    color: var(--colorClaro);
+    padding: 3.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 2rem;
+    display: inline-block;
+}
+.w-101 input{
+display: flex;
+    flex-direction:column; 
+    align-items:flex-start;
+    justify-content:space-evenly;
+}
+.Correo{
+    background-image: url("../img/balon2.png");
+    background-repeat: no-repeat;
+    background-size:inherit ;
+    background-size: 100%;
+}
+
+
+/*
+/************************Contacto*************************
+
+
+
+
+.aliniacion-terminos .a{
+    text-decoration: none;
+    
+}*/
+
